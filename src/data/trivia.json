@@ -1,0 +1,2514 @@
+[
+  {
+    "value": 0,
+    "title": "ビッグバン",
+    "description": "宇宙のはじまり。時間ゼロからすべてが始まった。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "science",
+    "shortTitle": "ビッグバン"
+  },
+  {
+    "value": 0.1,
+    "title": "瞬き",
+    "description": "人間の瞬きは約0.1秒。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "science"
+  },
+  {
+    "value": 0.2,
+    "title": "F1反応速度",
+    "description": "プロドライバーのスタート反応は約0.2秒。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports"
+  },
+  {
+    "value": 0.3,
+    "title": "ハエの羽ばたき",
+    "description": "ハエは1秒間に約200回羽ばたく。1回約0.003秒だが0.3秒で約100回。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "science"
+  },
+  {
+    "value": 0.4,
+    "title": "心臓の収縮期",
+    "description": "心臓の1回の拍動のうち収縮期は約0.4秒。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "science"
+  },
+  {
+    "value": 0.5,
+    "title": "深呼吸の半分",
+    "description": "深呼吸1サイクル約1秒の半分。",
+    "category": "culture",
+    "rarity": "N",
+    "sourceType": "culture"
+  },
+  {
+    "value": 0.6,
+    "title": "カメラのシャッター",
+    "description": "高速シャッター0.6秒はスポーツ撮影の目安。",
+    "category": "culture",
+    "rarity": "N",
+    "sourceType": "culture"
+  },
+  {
+    "value": 0.7,
+    "title": "カエルの舌",
+    "description": "カエルが昆虫を捕らえる舌の射出は約0.07秒。人間の瞬きと同じ0.1秒未満。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "science",
+    "shortTitle": "カエルの舌"
+  },
+  {
+    "value": 0.8,
+    "title": "末広がり（小）",
+    "description": "8は縁起の良い数字。0.8秒はその縮約。",
+    "category": "lucky",
+    "rarity": "R",
+    "sourceType": "lucky"
+  },
+  {
+    "value": 0.9,
+    "title": "サッカーPK助走",
+    "description": "PKの助走から蹴りまで約0.9秒の選手もいる。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "sports"
+  },
+  {
+    "value": 1,
+    "title": "1秒の定義",
+    "description": "セシウム133原子の9192631770回振動が1秒を定義する。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "science",
+    "shortTitle": "1秒"
+  },
+  {
+    "value": 1.1,
+    "title": "ポッキー・ぞろ目",
+    "description": "1月11日。1が並ぶ日。ポッキーの日。",
+    "category": "anniversary",
+    "rarity": "SR",
+    "sourceType": "anniversary",
+    "shortTitle": "ポッキーの日"
+  },
+  {
+    "value": 1.2,
+    "title": "光が月までの途中",
+    "description": "地球から月まで光は約1.3秒。1.2秒はその手前。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "science"
+  },
+  {
+    "value": 1.3,
+    "title": "光が月まで",
+    "description": "地球から月まで光は約1.30秒。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "science"
+  },
+  {
+    "value": 1.4,
+    "title": "√2（ルート2）",
+    "description": "2の平方根≈1.414。紙の対角線の比にも現れる。",
+    "category": "math",
+    "rarity": "SSR",
+    "sourceType": "math",
+    "shortTitle": "ルート2"
+  },
+  {
+    "value": 1.5,
+    "title": "オリンピックプール25m",
+    "description": "短水路25mを世界記録ペースで泳ぐと約10秒。1.5秒は反応〜初動。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "sports"
+  },
+  {
+    "value": 1.6,
+    "title": "黄金比 φ",
+    "description": "約1.618で表される美の比率。",
+    "category": "math",
+    "rarity": "SSR",
+    "sourceType": "math",
+    "shortTitle": "黄金比"
+  },
+  {
+    "value": 1.7,
+    "title": "√3",
+    "description": "3の平方根≈1.732。正三角形の高さの比。",
+    "category": "math",
+    "rarity": "SR",
+    "sourceType": "math",
+    "shortTitle": "ルート3"
+  },
+  {
+    "value": 1.8,
+    "title": "ライト兄弟初飛行の残り",
+    "description": "初飛行12秒のうち1.8秒は離陸直後の区間。",
+    "category": "history",
+    "rarity": "R",
+    "sourceType": "history"
+  },
+  {
+    "value": 1.9,
+    "title": "ニコチン到達の約4分の1",
+    "description": "ニコチンが脳に到達するまで約7秒。1.9秒はその約4分の1。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "science"
+  },
+  {
+    "value": 2,
+    "title": "HTTP 200 OK",
+    "description": "HTTPステータス200。リクエスト成功を意味する。",
+    "category": "culture",
+    "rarity": "SR",
+    "sourceType": "culture",
+    "shortTitle": "200 OK"
+  },
+  {
+    "value": 2.1,
+    "title": "ネイピア数 e",
+    "description": "自然対数の底≈2.71828。",
+    "category": "math",
+    "rarity": "SSR",
+    "sourceType": "math",
+    "shortTitle": "ネイピア数"
+  },
+  {
+    "value": 2.2,
+    "title": "猫の日",
+    "description": "2月22日。ニャン（2）ニャン（2）ニャン（2）で猫の日。",
+    "category": "anniversary",
+    "rarity": "SR",
+    "sourceType": "anniversary",
+    "shortTitle": "猫の日"
+  },
+  {
+    "value": 2.3,
+    "title": "富士山の日",
+    "description": "2月23日は富士山の日。国土地理院が制定した記念日。",
+    "category": "anniversary",
+    "rarity": "R",
+    "sourceType": "anniversary",
+    "shortTitle": "富士山の日"
+  },
+  {
+    "value": 2.4,
+    "title": "バレンタインデー前夜",
+    "description": "2月14日バレンタイン。2.4はその近似。",
+    "category": "anniversary",
+    "rarity": "R",
+    "sourceType": "anniversary"
+  },
+  {
+    "value": 2.5,
+    "title": "コアラの1跳び",
+    "description": "コアラの木から木への跳躍は約2.5秒。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "science"
+  },
+  {
+    "value": 2.6,
+    "title": "コールマン60m室内",
+    "description": "2018年クリスチャン・コールマン60m室内6.34秒。2.6秒はスタート〜初動の目安。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports",
+    "shortTitle": "60m室内"
+  },
+  {
+    "value": 2.7,
+    "title": "eの近似",
+    "description": "ネイピア数e≈2.718。",
+    "category": "math",
+    "rarity": "R",
+    "sourceType": "math"
+  },
+  {
+    "value": 2.8,
+    "title": "タウ（2π）",
+    "description": "円周率の2倍τ≈6.28。2.8はその約半分で、円周と直径の比を直感的に捉える数。",
+    "category": "math",
+    "rarity": "R",
+    "sourceType": "math"
+  },
+  {
+    "value": 2.9,
+    "title": "稲妻カウント開始",
+    "description": "光を見てから雷が聞こえるまで数える秒数の目安。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "science"
+  },
+  {
+    "value": 3,
+    "title": "3秒ルール",
+    "description": "落とした食べ物の都市伝説「3秒ルール」。",
+    "category": "culture",
+    "rarity": "R",
+    "sourceType": "culture",
+    "shortTitle": "3秒ルール"
+  },
+  {
+    "value": 3.1,
+    "title": "円周率 π",
+    "description": "円周率π≈3.14159。数学を代表する定数。",
+    "category": "math",
+    "rarity": "SSR",
+    "sourceType": "math",
+    "shortTitle": "円周率"
+  },
+  {
+    "value": 3.2,
+    "title": "東日本大震災",
+    "description": "2011年3月11日。3.11を3.2に近似した記憶の秒数。",
+    "category": "culture",
+    "rarity": "SSR",
+    "sourceType": "local",
+    "shortTitle": "3.11"
+  },
+  {
+    "value": 3.3,
+    "title": "ひな祭り",
+    "description": "3月3日。桃の節句・ひな祭り。",
+    "category": "anniversary",
+    "rarity": "SR",
+    "sourceType": "anniversary",
+    "shortTitle": "ひな祭り"
+  },
+  {
+    "value": 3.4,
+    "title": "サンキューの日",
+    "description": "3月9日はサンキューの日。39（サンキュー）の語呂と日付が対応する。",
+    "category": "anniversary",
+    "rarity": "R",
+    "sourceType": "anniversary",
+    "shortTitle": "サンキューの日"
+  },
+  {
+    "value": 3.5,
+    "title": "ルービック3×3世界記録",
+    "description": "2018年ユスン・ウォンが3×3キューブを3.47秒で完成。3.5秒はその記録圏。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "sports",
+    "shortTitle": "ルービック記録"
+  },
+  {
+    "value": 3.6,
+    "title": "360度",
+    "description": "1回転は360度。3.6は直角の4倍に相当する角度の単位として使われる。",
+    "category": "math",
+    "rarity": "N",
+    "sourceType": "math"
+  },
+  {
+    "value": 3.7,
+    "title": "体温",
+    "description": "人間の平熱は約37℃を36.5〜37.5で表す。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "science",
+    "shortTitle": "体温"
+  },
+  {
+    "value": 3.8,
+    "title": "国際女性デー",
+    "description": "3月8日は国際女性デー。女性の人権と世界平和を願う国際デー。",
+    "category": "anniversary",
+    "rarity": "SR",
+    "sourceType": "anniversary",
+    "shortTitle": "国際女性デー"
+  },
+  {
+    "value": 3.9,
+    "title": "メッシの背番号",
+    "description": "リオネル・メッシのバルセロナ時代の背番号10と30の間。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "sports"
+  },
+  {
+    "value": 4,
+    "title": "稲妻4秒ルール",
+    "description": "光を見て4秒後に雷が聞こえたら約1.3km先。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "science"
+  },
+  {
+    "value": 4.1,
+    "title": "HTTP 401",
+    "description": "HTTP 401 Unauthorized。認証が必要。",
+    "category": "culture",
+    "rarity": "R",
+    "sourceType": "culture"
+  },
+  {
+    "value": 4.2,
+    "title": "110mH世界記録",
+    "description": "2023年グラント・ホロウェイ110mハードル4.22秒の近似。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports",
+    "shortTitle": "110mH記録"
+  },
+  {
+    "value": 4.3,
+    "title": "生命・宇宙の答え",
+    "description": "『銀河ヒッチハイク・ガイド』で地球の答えは42。4と3はその因数分解。",
+    "category": "culture",
+    "rarity": "R",
+    "sourceType": "culture",
+    "shortTitle": "答え42"
+  },
+  {
+    "value": 4.4,
+    "title": "ヨンヨンヨン",
+    "description": "4が3つ並ぶゾロ目。",
+    "category": "lucky",
+    "rarity": "R",
+    "sourceType": "lucky"
+  },
+  {
+    "value": 4.5,
+    "title": "マラソン中間点",
+    "description": "42.195kmのマラソンの約10分の一距離。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "sports"
+  },
+  {
+    "value": 4.6,
+    "title": "100m・グレイハウンド",
+    "description": "サラブレッドより速い犬の100mは約5秒。4.6はその手前。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "sports"
+  },
+  {
+    "value": 4.7,
+    "title": "銀（Ag）",
+    "description": "銀の原子番号は47。4.7は元素番号を秒数風に覚えるトリビア。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "science",
+    "shortTitle": "銀"
+  },
+  {
+    "value": 4.8,
+    "title": "音速",
+    "description": "空気中の音速は約340m/s。4と8はその頭の数字。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "science"
+  },
+  {
+    "value": 4.9,
+    "title": "女子100m世界記録",
+    "description": "1988年グリフィス＝ジョイナー10.49秒。4.9秒は50m相当のペース。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports",
+    "shortTitle": "女子100m"
+  },
+  {
+    "value": 5,
+    "title": "100m・犬の記録",
+    "description": "グレイハウンドの100mは約5秒。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "sports"
+  },
+  {
+    "value": 5.1,
+    "title": "アイスクリームの日",
+    "description": "5月9日。語呂合わせでアイスクリームの日。",
+    "category": "anniversary",
+    "rarity": "R",
+    "sourceType": "anniversary",
+    "shortTitle": "アイスの日"
+  },
+  {
+    "value": 5.2,
+    "title": "トランプ52枚",
+    "description": "1組のトランプは52枚。5.2はその枚数を秒数風に覚えるトリビア。",
+    "category": "culture",
+    "rarity": "N",
+    "sourceType": "culture"
+  },
+  {
+    "value": 5.3,
+    "title": "HTTP 503",
+    "description": "HTTP 503 Service Unavailable。サーバー過負荷。",
+    "category": "culture",
+    "rarity": "R",
+    "sourceType": "culture"
+  },
+  {
+    "value": 5.4,
+    "title": "ゴーゴーゴー",
+    "description": "5が3つ並ぶ。5.55の近似ゾロ目。",
+    "category": "lucky",
+    "rarity": "R",
+    "sourceType": "lucky"
+  },
+  {
+    "value": 5.5,
+    "title": "こどもの日",
+    "description": "5月5日。端午の節句・こどもの日。",
+    "category": "anniversary",
+    "rarity": "SR",
+    "sourceType": "anniversary",
+    "shortTitle": "こどもの日"
+  },
+  {
+    "value": 5.6,
+    "title": "世界最高気温",
+    "description": "記録上の最高気温56.7℃（デスバレー1913年）。5.6はその整数部。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "science"
+  },
+  {
+    "value": 5.7,
+    "title": "400mH世界記録",
+    "description": "2019年カルステン・ワーホルム400mハードル45.94秒。5.7秒は100mHの記録圏。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "sports"
+  },
+  {
+    "value": 5.8,
+    "title": "ボルト100m世界記録",
+    "description": "2009年ウサイン・ボルト9.58秒。5.8は50m相当ペース。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "sports",
+    "shortTitle": "ボルト記録"
+  },
+  {
+    "value": 5.9,
+    "title": "60m室内WR",
+    "description": "2018年クリスチャン・コールマン60m室内6.34秒の前半。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports"
+  },
+  {
+    "value": 6,
+    "title": "時の記念日",
+    "description": "6月10日は時の記念日。時計や時間の大切さを考える日。",
+    "category": "anniversary",
+    "rarity": "R",
+    "sourceType": "anniversary",
+    "shortTitle": "時の記念日"
+  },
+  {
+    "value": 6.1,
+    "title": "炭素の原子番号",
+    "description": "炭素Cの原子番号は6。6.1はその近似。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "science"
+  },
+  {
+    "value": 6.2,
+    "title": "2π（タウ）",
+    "description": "円周率の2倍τ≈6.28318。",
+    "category": "math",
+    "rarity": "SR",
+    "sourceType": "math",
+    "shortTitle": "2π"
+  },
+  {
+    "value": 6.3,
+    "title": "ボルト9.63",
+    "description": "2012年ロンドン五輪100m9.63秒の60m相当。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "sports"
+  },
+  {
+    "value": 6.4,
+    "title": "チェス盤64マス",
+    "description": "チェス盤は8×8＝64マス。6.4はそのマス数を秒数風に覚えるトリビア。",
+    "category": "culture",
+    "rarity": "R",
+    "sourceType": "culture"
+  },
+  {
+    "value": 6.5,
+    "title": "シックスシックス",
+    "description": "6が2つ並ぶ。6.66の近似。",
+    "category": "lucky",
+    "rarity": "R",
+    "sourceType": "lucky"
+  },
+  {
+    "value": 6.6,
+    "title": "シックスシックス",
+    "description": "6が3つ並ぶゾロ目の近似。",
+    "category": "lucky",
+    "rarity": "R",
+    "sourceType": "lucky"
+  },
+  {
+    "value": 6.7,
+    "title": "ニコチン到達",
+    "description": "ニコチンが脳に到達するまで約7秒。6.7はその手前。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "science"
+  },
+  {
+    "value": 6.8,
+    "title": "北京五輪開会",
+    "description": "2008年8月8日20時08分開会式。",
+    "category": "culture",
+    "rarity": "SR",
+    "sourceType": "local"
+  },
+  {
+    "value": 6.9,
+    "title": "ボルト初の世界記録",
+    "description": "2008年ウサイン・ボルトが100m9.69秒で初の世界記録。6.9秒は70m通過の目安。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "sports",
+    "shortTitle": "ボルト9.69"
+  },
+  {
+    "value": 7,
+    "title": "ニコチン到達",
+    "description": "ニコチンが脳に到達するまで約7秒。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "science"
+  },
+  {
+    "value": 7.1,
+    "title": "七夕",
+    "description": "7月7日。織姫と彦星が1年に1度会う日。",
+    "category": "anniversary",
+    "rarity": "SSR",
+    "sourceType": "anniversary",
+    "shortTitle": "七夕"
+  },
+  {
+    "value": 7.2,
+    "title": "なないろの日",
+    "description": "7月17日はなないろの日。虹の7色を祝う記念日。",
+    "category": "anniversary",
+    "rarity": "R",
+    "sourceType": "anniversary",
+    "shortTitle": "なないろの日"
+  },
+  {
+    "value": 7.3,
+    "title": "阪神大震災マグニチュード",
+    "description": "1995年阪神・淡路大震災M7.3。",
+    "category": "culture",
+    "rarity": "SSR",
+    "sourceType": "local",
+    "shortTitle": "阪神大震災"
+  },
+  {
+    "value": 7.4,
+    "title": "東日本大震災マグニチュード",
+    "description": "2011年東日本大震災M9.0の余震帯。7.4は関連値。",
+    "category": "culture",
+    "rarity": "SR",
+    "sourceType": "local"
+  },
+  {
+    "value": 7.5,
+    "title": "ラッキーセブン",
+    "description": "7が並ぶ縁起の良い数字。7.5はその変形。",
+    "category": "lucky",
+    "rarity": "R",
+    "sourceType": "lucky"
+  },
+  {
+    "value": 7.6,
+    "title": "超ラッキーセブン",
+    "description": "7.77の近似。7が並ぶ最強の縁起数字。",
+    "category": "lucky",
+    "rarity": "SSR",
+    "sourceType": "lucky",
+    "shortTitle": "ラッキーセブン"
+  },
+  {
+    "value": 7.7,
+    "title": "超ラッキーセブン",
+    "description": "7が3つ並ぶ最強の縁起数字。",
+    "category": "lucky",
+    "rarity": "SSR",
+    "sourceType": "lucky",
+    "shortTitle": "ラッキーセブン"
+  },
+  {
+    "value": 7.8,
+    "title": "富士山3776m",
+    "description": "富士山標高3776mを7.8に縮約。",
+    "category": "culture",
+    "rarity": "SR",
+    "sourceType": "local",
+    "shortTitle": "富士山"
+  },
+  {
+    "value": 7.9,
+    "title": "ライト兄弟初飛行",
+    "description": "1903年ライト兄弟の初飛行は12秒。7.9はその約3分の2。",
+    "category": "history",
+    "rarity": "SR",
+    "sourceType": "history"
+  },
+  {
+    "value": 8,
+    "title": "美術館の平均鑑賞",
+    "description": "美術館で1作品を見る平均時間は約8秒と言われる。",
+    "category": "culture",
+    "rarity": "N",
+    "sourceType": "culture"
+  },
+  {
+    "value": 8.1,
+    "title": "重力加速度",
+    "description": "地球表面の重力加速度は約9.81m/s²。8.1はその近似。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "science",
+    "shortTitle": "重力"
+  },
+  {
+    "value": 8.2,
+    "title": "水の日",
+    "description": "8月1日は水の日。",
+    "category": "anniversary",
+    "rarity": "N",
+    "sourceType": "anniversary"
+  },
+  {
+    "value": 8.3,
+    "title": "そろばんの日",
+    "description": "8月8日はそろばんの日。そろばんの形が88に似ることから。",
+    "category": "anniversary",
+    "rarity": "R",
+    "sourceType": "anniversary",
+    "shortTitle": "そろばんの日"
+  },
+  {
+    "value": 8.4,
+    "title": "終戦記念日",
+    "description": "8月15日は終戦記念日。1945年の日本の終戦を悼む日。",
+    "category": "history",
+    "rarity": "SSR",
+    "sourceType": "history",
+    "shortTitle": "終戦記念日"
+  },
+  {
+    "value": 8.5,
+    "title": "エベレスト8848m",
+    "description": "エベレストの標高は8848m。世界最高峰として知られる。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "science",
+    "shortTitle": "エベレスト"
+  },
+  {
+    "value": 8.6,
+    "title": "でしょ！化学",
+    "description": "ラジオ体操第2の一節。86は原子番号ラドン。",
+    "category": "culture",
+    "rarity": "R",
+    "sourceType": "culture",
+    "shortTitle": "でしょ！化学"
+  },
+  {
+    "value": 8.7,
+    "title": "ハイ！ファイ！化学",
+    "description": "ラジオ体操。87はフランシウムの原子番号。",
+    "category": "culture",
+    "rarity": "R",
+    "sourceType": "culture"
+  },
+  {
+    "value": 8.8,
+    "title": "末広がり",
+    "description": "8は縁起が良い数字。8.88の近似。",
+    "category": "lucky",
+    "rarity": "SSR",
+    "sourceType": "lucky",
+    "shortTitle": "末広がり"
+  },
+  {
+    "value": 8.9,
+    "title": "重陽の節句",
+    "description": "9月9日は重陽の節句。菊の節句とも呼ばれる。",
+    "category": "anniversary",
+    "rarity": "R",
+    "sourceType": "anniversary",
+    "shortTitle": "重陽の節句"
+  },
+  {
+    "value": 9,
+    "title": "100m10秒の壁",
+    "description": "かつての男子100mの夢の壁10秒。9.0はその手前。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "sports",
+    "shortTitle": "10秒の壁"
+  },
+  {
+    "value": 9.1,
+    "title": "東日本大震災M9.0",
+    "description": "2011年東日本大震災マグニチュード9.0。",
+    "category": "culture",
+    "rarity": "SSR",
+    "sourceType": "local",
+    "shortTitle": "東日本大震災"
+  },
+  {
+    "value": 9.2,
+    "title": "スプリンターの加速",
+    "description": "100m世界記録ペースの60m通過は約6.3秒。9.2は後半40m。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "sports"
+  },
+  {
+    "value": 9.3,
+    "title": "ボルト9.63の後半",
+    "description": "2012年ボルト9.63秒の後半40m相当。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports"
+  },
+  {
+    "value": 9.4,
+    "title": "100m世界記録ペース",
+    "description": "9.58秒の100mの後半ペース。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports"
+  },
+  {
+    "value": 9.5,
+    "title": "ボルト9.58",
+    "description": "2009年ウサイン・ボルト100m9.58秒の近似9.6。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "sports",
+    "shortTitle": "ボルト記録"
+  },
+  {
+    "value": 9.6,
+    "title": "ボルト100m世界記録",
+    "description": "2009年ウサイン・ボルト9.58秒を9.6に丸めた記録秒数。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "sports",
+    "shortTitle": "ボルト記録"
+  },
+  {
+    "value": 9.7,
+    "title": "男子100m歴代2位",
+    "description": "タイソン・ゲイら9.69秒台の記録圏。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports"
+  },
+  {
+    "value": 9.8,
+    "title": "重力加速度",
+    "description": "地球表面の重力加速度は約9.81m/s²。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "science",
+    "shortTitle": "重力加速度"
+  },
+  {
+    "value": 9.9,
+    "title": "限界のゾロ目",
+    "description": "9が3つ並ぶ。10.0直前のゾロ目。",
+    "category": "lucky",
+    "rarity": "SR",
+    "sourceType": "lucky",
+    "shortTitle": "ゾロ目"
+  },
+  {
+    "value": 10,
+    "title": "10秒の壁",
+    "description": "男子100m走のかつての夢の壁10秒。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "sports",
+    "shortTitle": "10秒の壁"
+  },
+  {
+    "value": 10.1,
+    "title": "世界メンタルヘルスデー",
+    "description": "10月10日。",
+    "category": "anniversary",
+    "rarity": "R",
+    "sourceType": "anniversary"
+  },
+  {
+    "value": 10.2,
+    "title": "女子100mWR",
+    "description": "1988年グリフィス＝ジョイナー10.49秒の近似。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "sports"
+  },
+  {
+    "value": 10.3,
+    "title": "ハロウィン",
+    "description": "10月31日はハロウィン。10.3はその月日を秒数風に表した記憶の数字。",
+    "category": "anniversary",
+    "rarity": "SR",
+    "sourceType": "anniversary",
+    "shortTitle": "ハロウィン"
+  },
+  {
+    "value": 10.4,
+    "title": "HTTP 404",
+    "description": "HTTP 404 Not Found。ページが見つからない。",
+    "category": "culture",
+    "rarity": "SR",
+    "sourceType": "culture",
+    "shortTitle": "404"
+  },
+  {
+    "value": 10.5,
+    "title": "ハロウィン",
+    "description": "10月31日。仮装の日。",
+    "category": "anniversary",
+    "rarity": "SR",
+    "sourceType": "anniversary",
+    "shortTitle": "ハロウィン"
+  },
+  {
+    "value": 10.6,
+    "title": "時の記念日",
+    "description": "6月10日は日本で時間の大切さを考える時の記念日。10.6は月日をそのまま読める。",
+    "category": "anniversary",
+    "rarity": "SR",
+    "sourceType": "anniversary",
+    "shortTitle": "時の記念日"
+  },
+  {
+    "value": 10.7,
+    "title": "納豆の日",
+    "description": "7月10日は語呂合わせで納豆の日。10.7は10日と7月の組み合わせに対応する。",
+    "category": "anniversary",
+    "rarity": "R",
+    "sourceType": "anniversary"
+  },
+  {
+    "value": 10.8,
+    "title": "道の日",
+    "description": "8月10日は道の日。道路の役割を見直す記念日として制定された。",
+    "category": "anniversary",
+    "rarity": "R",
+    "sourceType": "anniversary"
+  },
+  {
+    "value": 10.9,
+    "title": "銃刀法公布日",
+    "description": "1958年9月10日に銃刀法が公布された。10.9は9月10日を表せる数字。",
+    "category": "history",
+    "rarity": "N",
+    "sourceType": "history"
+  },
+  {
+    "value": 11,
+    "title": "ポッキーの日",
+    "description": "11月11日はポッキーの日。1が並ぶゾロ目の日。",
+    "category": "anniversary",
+    "rarity": "SSR",
+    "sourceType": "anniversary",
+    "shortTitle": "ポッキーの日"
+  },
+  {
+    "value": 11.1,
+    "title": "ポッキーの日",
+    "description": "11月11日。1が4つ並ぶゾロ目の日。",
+    "category": "anniversary",
+    "rarity": "SSR",
+    "sourceType": "anniversary",
+    "shortTitle": "ポッキーの日"
+  },
+  {
+    "value": 11.2,
+    "title": "文化の日",
+    "description": "11月3日は文化の日。日本国憲法の公布を記念する祝日。",
+    "category": "anniversary",
+    "rarity": "R",
+    "sourceType": "anniversary",
+    "shortTitle": "文化の日"
+  },
+  {
+    "value": 11.3,
+    "title": "いい肉の日",
+    "description": "11月29日。語呂合わせで「いい肉の日」。",
+    "category": "anniversary",
+    "rarity": "SSR",
+    "sourceType": "anniversary",
+    "shortTitle": "いい肉の日"
+  },
+  {
+    "value": 11.4,
+    "title": "ユネスコ憲章発効日",
+    "description": "11月4日はユネスコ憲章が発効した日。教育・科学・文化の国際協力を象徴する。",
+    "category": "history",
+    "rarity": "SR",
+    "sourceType": "history"
+  },
+  {
+    "value": 11.5,
+    "title": "津波防災の日",
+    "description": "11月5日は津波防災の日。1854年の安政南海地震を教訓にした防災啓発の日。",
+    "category": "anniversary",
+    "rarity": "SR",
+    "sourceType": "local"
+  },
+  {
+    "value": 11.6,
+    "title": "お見合い記念日",
+    "description": "11月6日は戦後に公的なお見合い企画が話題になった日として知られる。",
+    "category": "culture",
+    "rarity": "N",
+    "sourceType": "culture"
+  },
+  {
+    "value": 11.7,
+    "title": "鍋の日",
+    "description": "11月7日は立冬になることが多く、鍋の日として定着している。",
+    "category": "culture",
+    "rarity": "N",
+    "sourceType": "culture"
+  },
+  {
+    "value": 11.8,
+    "title": "いい歯の日",
+    "description": "11月8日は語呂合わせでいい歯の日。歯科検診の啓発日として有名。",
+    "category": "anniversary",
+    "rarity": "R",
+    "sourceType": "anniversary"
+  },
+  {
+    "value": 11.9,
+    "title": "119番の日",
+    "description": "11月9日は119番の日。消防と救急の正しい利用を広める日。",
+    "category": "anniversary",
+    "rarity": "SR",
+    "sourceType": "local",
+    "shortTitle": "119番の日"
+  },
+  {
+    "value": 12,
+    "title": "ライト兄弟初飛行",
+    "description": "1903年初飛行12秒。",
+    "category": "history",
+    "rarity": "SR",
+    "sourceType": "history"
+  },
+  {
+    "value": 12.1,
+    "title": "美しい連番",
+    "description": "1→2→3→4の連番12.34の近似。",
+    "category": "lucky",
+    "rarity": "SR",
+    "sourceType": "lucky",
+    "shortTitle": "連番"
+  },
+  {
+    "value": 12.2,
+    "title": "クリスマス",
+    "description": "12月25日はクリスマス。12.2はその月日を秒数風に表した記憶の数字。",
+    "category": "anniversary",
+    "rarity": "SR",
+    "sourceType": "anniversary",
+    "shortTitle": "クリスマス"
+  },
+  {
+    "value": 12.3,
+    "title": "美しい連番",
+    "description": "1→2→3と順に増える連番。",
+    "category": "lucky",
+    "rarity": "SSR",
+    "sourceType": "lucky",
+    "shortTitle": "連番"
+  },
+  {
+    "value": 12.4,
+    "title": "クリスマスイブ",
+    "description": "12月24日はクリスマスイブ。12.4はその月日を秒数風に表した記憶の数字。",
+    "category": "anniversary",
+    "rarity": "SR",
+    "sourceType": "anniversary",
+    "shortTitle": "クリスマスイブ"
+  },
+  {
+    "value": 12.5,
+    "title": "クリスマス",
+    "description": "12月25日。キリストの降誕祭。",
+    "category": "anniversary",
+    "rarity": "SSR",
+    "sourceType": "anniversary",
+    "shortTitle": "クリスマス"
+  },
+  {
+    "value": 12.6,
+    "title": "大晦日",
+    "description": "12月31日は大晦日。12.6はその月日を秒数風に表した記憶の数字。",
+    "category": "anniversary",
+    "rarity": "SR",
+    "sourceType": "anniversary",
+    "shortTitle": "大晦日"
+  },
+  {
+    "value": 12.7,
+    "title": "大晦日",
+    "description": "12月31日。1年の最後の日。",
+    "category": "anniversary",
+    "rarity": "SSR",
+    "sourceType": "anniversary",
+    "shortTitle": "大晦日"
+  },
+  {
+    "value": 12.8,
+    "title": "針供養の日",
+    "description": "12月8日は針供養が行われる地域が多い。使った針に感謝する日本文化の行事。",
+    "category": "culture",
+    "rarity": "N",
+    "sourceType": "culture"
+  },
+  {
+    "value": 12.9,
+    "title": "地球感謝の日",
+    "description": "12月9日は地球環境を意識する民間の記念日として紹介される。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "science"
+  },
+  {
+    "value": 13,
+    "title": "13日の金曜日",
+    "description": "13という数字は西洋文化で不吉とされることがあり、映画題材にもなった。",
+    "category": "culture",
+    "rarity": "SR",
+    "sourceType": "culture",
+    "shortTitle": "13日の金曜"
+  },
+  {
+    "value": 13.1,
+    "title": "1月13日 ピース記念日",
+    "description": "1946年1月13日に高級たばこピースが発売され、記念日として知られる。",
+    "category": "history",
+    "rarity": "N",
+    "sourceType": "history"
+  },
+  {
+    "value": 13.2,
+    "title": "2月13日 世界ラジオデー",
+    "description": "2月13日はUNESCOが定める世界ラジオデー。音声メディアの価値を再確認する日。",
+    "category": "culture",
+    "rarity": "R",
+    "sourceType": "anniversary"
+  },
+  {
+    "value": 13.3,
+    "title": "3月13日 サンドイッチデー",
+    "description": "3が1を挟む形から3月13日はサンドイッチデーと呼ばれる。数字遊びの記念日。",
+    "category": "culture",
+    "rarity": "R",
+    "sourceType": "culture"
+  },
+  {
+    "value": 13.4,
+    "title": "4月13日 喫茶店の日",
+    "description": "1888年4月13日に日本初の喫茶店が開業したことにちなむ。",
+    "category": "history",
+    "rarity": "SR",
+    "sourceType": "history"
+  },
+  {
+    "value": 13.5,
+    "title": "5月13日 カクテルの日",
+    "description": "5月13日はカクテルという言葉の初出にちなむ記念日として知られる。",
+    "category": "culture",
+    "rarity": "N",
+    "sourceType": "culture"
+  },
+  {
+    "value": 13.6,
+    "title": "6月13日 はやぶさ帰還日",
+    "description": "2010年6月13日、小惑星探査機はやぶさが地球へ帰還した。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "science",
+    "shortTitle": "はやぶさ帰還"
+  },
+  {
+    "value": 13.7,
+    "title": "7月13日 オカルト記念日",
+    "description": "1974年7月13日に超常現象番組が大きな話題となり記念日化した。",
+    "category": "culture",
+    "rarity": "N",
+    "sourceType": "culture"
+  },
+  {
+    "value": 13.8,
+    "title": "8月13日 国際左利きの日",
+    "description": "8月13日は国際左利きの日。少数派の使いやすさを考える日。",
+    "category": "anniversary",
+    "rarity": "R",
+    "sourceType": "anniversary"
+  },
+  {
+    "value": 13.9,
+    "title": "9月13日 世界法の日",
+    "description": "9月13日は法の支配を考える日として各国で紹介される。",
+    "category": "history",
+    "rarity": "N",
+    "sourceType": "history"
+  },
+  {
+    "value": 14,
+    "title": "ホワイトデーの日付",
+    "description": "3月14日のホワイトデーは、数字14を強く印象づける日本文化の行事。",
+    "category": "culture",
+    "rarity": "R",
+    "sourceType": "culture"
+  },
+  {
+    "value": 14.1,
+    "title": "1月14日 タロとジロの日",
+    "description": "南極観測で生還したカラフト犬の物語にちなむ記念日。",
+    "category": "history",
+    "rarity": "SR",
+    "sourceType": "history"
+  },
+  {
+    "value": 14.2,
+    "title": "2月14日 バレンタインデー",
+    "description": "2月14日は世界的に知られるバレンタインデー。14.2は月日と一致する。",
+    "category": "anniversary",
+    "rarity": "SR",
+    "sourceType": "anniversary",
+    "shortTitle": "バレンタイン"
+  },
+  {
+    "value": 14.3,
+    "title": "3月14日 円周率の日",
+    "description": "3.14にちなみ3月14日は世界で円周率の日として祝われる。",
+    "category": "math",
+    "rarity": "SSR",
+    "sourceType": "math",
+    "shortTitle": "円周率の日"
+  },
+  {
+    "value": 14.4,
+    "title": "4月14日 タイタニック記録",
+    "description": "1912年4月14日深夜、タイタニック号が氷山に衝突した。",
+    "category": "history",
+    "rarity": "SR",
+    "sourceType": "history"
+  },
+  {
+    "value": 14.5,
+    "title": "5月14日 温度計の日",
+    "description": "5月14日は華氏温度の考案者ガブリエル・ファーレンハイトの誕生日。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "science"
+  },
+  {
+    "value": 14.6,
+    "title": "6月14日 世界献血者デー",
+    "description": "6月14日は輸血医療を支える献血に感謝する国際デー。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "anniversary"
+  },
+  {
+    "value": 14.7,
+    "title": "7月14日 パリ祭",
+    "description": "フランス革命を象徴するバスティーユ襲撃にちなむ祝日。",
+    "category": "history",
+    "rarity": "SR",
+    "sourceType": "history"
+  },
+  {
+    "value": 14.8,
+    "title": "8月14日 専売特許の日",
+    "description": "1885年8月14日に日本で専売特許条例が公布された。",
+    "category": "history",
+    "rarity": "N",
+    "sourceType": "history"
+  },
+  {
+    "value": 14.9,
+    "title": "9月14日 メンズバレンタインデー",
+    "description": "日本独自の販促文化から生まれた9月14日の記念日。",
+    "category": "culture",
+    "rarity": "N",
+    "sourceType": "culture"
+  },
+  {
+    "value": 15,
+    "title": "CM15秒",
+    "description": "テレビCMの短尺15秒。",
+    "category": "culture",
+    "rarity": "R",
+    "sourceType": "culture"
+  },
+  {
+    "value": 15.1,
+    "title": "1月15日 いちごの日",
+    "description": "1と5の語呂合わせで1月15日はいちごの日。",
+    "category": "anniversary",
+    "rarity": "R",
+    "sourceType": "anniversary"
+  },
+  {
+    "value": 15.2,
+    "title": "2月15日 涅槃会",
+    "description": "2月15日は釈迦の入滅をしのぶ涅槃会が行われる。",
+    "category": "history",
+    "rarity": "N",
+    "sourceType": "history"
+  },
+  {
+    "value": 15.3,
+    "title": "3月15日 靴の記念日",
+    "description": "1870年3月15日に日本初の西洋靴工場が開設された。",
+    "category": "history",
+    "rarity": "SR",
+    "sourceType": "history"
+  },
+  {
+    "value": 15.4,
+    "title": "4月15日 ヘリコプターの日",
+    "description": "ヘリコプターの原理図を残したレオナルド・ダ・ヴィンチの誕生日。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "science"
+  },
+  {
+    "value": 15.5,
+    "title": "5月15日 沖縄本土復帰記念日",
+    "description": "1972年5月15日に沖縄が本土復帰した。",
+    "category": "history",
+    "rarity": "SSR",
+    "sourceType": "local",
+    "shortTitle": "沖縄復帰"
+  },
+  {
+    "value": 15.6,
+    "title": "6月15日 信用金庫の日",
+    "description": "日本の協同組織金融を支える信用金庫業界の記念日。",
+    "category": "culture",
+    "rarity": "N",
+    "sourceType": "culture"
+  },
+  {
+    "value": 15.7,
+    "title": "7月15日 中元",
+    "description": "日本の贈答文化である中元の時期を象徴する日付。",
+    "category": "culture",
+    "rarity": "R",
+    "sourceType": "culture"
+  },
+  {
+    "value": 15.8,
+    "title": "8月15日 終戦の日",
+    "description": "1945年8月15日は日本で終戦の日として記憶される。",
+    "category": "history",
+    "rarity": "SSR",
+    "sourceType": "history",
+    "shortTitle": "終戦の日"
+  },
+  {
+    "value": 15.9,
+    "title": "9月15日 老人の日",
+    "description": "9月15日は高齢者への敬意を示す老人の日。",
+    "category": "anniversary",
+    "rarity": "R",
+    "sourceType": "anniversary"
+  },
+  {
+    "value": 16,
+    "title": "16ビート",
+    "description": "ポップスの基本リズムである16ビートは、細かなノリを作る代表的な刻み方。",
+    "category": "culture",
+    "rarity": "SR",
+    "sourceType": "culture"
+  },
+  {
+    "value": 16.1,
+    "title": "1月16日 禁酒の日",
+    "description": "1920年1月16日、アメリカで禁酒法が施行された。",
+    "category": "history",
+    "rarity": "R",
+    "sourceType": "history"
+  },
+  {
+    "value": 16.2,
+    "title": "2月16日 天気図記念日",
+    "description": "1883年2月16日に日本初の天気図が作成された。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "science"
+  },
+  {
+    "value": 16.3,
+    "title": "3月16日 国立公園指定記念",
+    "description": "1934年3月16日に瀬戸内海などが国立公園に指定された。",
+    "category": "history",
+    "rarity": "N",
+    "sourceType": "local"
+  },
+  {
+    "value": 16.4,
+    "title": "4月16日 チャップリンの日",
+    "description": "喜劇王チャップリンの誕生日は4月16日。映画文化に大きな影響を残した。",
+    "category": "culture",
+    "rarity": "R",
+    "sourceType": "culture"
+  },
+  {
+    "value": 16.5,
+    "title": "5月16日 旅の日",
+    "description": "松尾芭蕉が『おくのほそ道』へ旅立った日にちなむ記念日。",
+    "category": "history",
+    "rarity": "SR",
+    "sourceType": "history"
+  },
+  {
+    "value": 16.6,
+    "title": "6月16日 和菓子の日",
+    "description": "6月16日は厄除け祈願の故事にちなむ和菓子の日。",
+    "category": "culture",
+    "rarity": "R",
+    "sourceType": "culture"
+  },
+  {
+    "value": 16.7,
+    "title": "7月16日 駅弁記念日",
+    "description": "1885年7月16日、宇都宮で駅弁販売が始まったとされる。",
+    "category": "history",
+    "rarity": "SR",
+    "sourceType": "history"
+  },
+  {
+    "value": 16.8,
+    "title": "8月16日 五山送り火",
+    "description": "京都の五山送り火が行われる日。夏の終わりを告げる伝統行事。",
+    "category": "culture",
+    "rarity": "SR",
+    "sourceType": "local"
+  },
+  {
+    "value": 16.9,
+    "title": "9月16日 オゾン層保護デー",
+    "description": "9月16日はモントリオール議定書採択を記念する国際デー。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "science"
+  },
+  {
+    "value": 17,
+    "title": "17音の俳句",
+    "description": "俳句は5・7・5の合計17音で構成される。日本文化を象徴する数。",
+    "category": "culture",
+    "rarity": "SR",
+    "sourceType": "culture",
+    "shortTitle": "俳句17音"
+  },
+  {
+    "value": 17.1,
+    "title": "1月17日 防災とボランティアの日",
+    "description": "阪神・淡路大震災を契機に定められた防災啓発の日。",
+    "category": "history",
+    "rarity": "SSR",
+    "sourceType": "local",
+    "shortTitle": "防災の日"
+  },
+  {
+    "value": 17.2,
+    "title": "2月17日 天使のささやきの日",
+    "description": "北海道で観測されるダイヤモンドダストにちなむ記念日。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "local"
+  },
+  {
+    "value": 17.3,
+    "title": "3月17日 聖パトリックデー",
+    "description": "アイルランド由来の祝祭日で、世界中が緑色に染まる日。",
+    "category": "culture",
+    "rarity": "R",
+    "sourceType": "culture"
+  },
+  {
+    "value": 17.4,
+    "title": "4月17日 恐竜の日",
+    "description": "恐竜探検史の節目にちなみ、恐竜好きに知られる記念日。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "science"
+  },
+  {
+    "value": 17.5,
+    "title": "5月17日 世界高血圧デー",
+    "description": "血圧管理の大切さを周知する国際的な健康デー。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "science"
+  },
+  {
+    "value": 17.6,
+    "title": "6月17日 砂漠化防止デー",
+    "description": "国連が定める環境デー。土地劣化の問題を考える日。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "anniversary"
+  },
+  {
+    "value": 17.7,
+    "title": "7月17日 漫画の日",
+    "description": "日本の漫画文化を支えた作家の誕生日にちなむ記念日。",
+    "category": "culture",
+    "rarity": "R",
+    "sourceType": "culture"
+  },
+  {
+    "value": 17.8,
+    "title": "8月17日 プロ野球ナイター記念日",
+    "description": "1948年8月17日に日本で公式ナイター試合が行われた。",
+    "category": "history",
+    "rarity": "SR",
+    "sourceType": "sports"
+  },
+  {
+    "value": 17.9,
+    "title": "9月17日 モノレール開業記念",
+    "description": "東京モノレール開業日である9月17日にちなむ鉄道史の数字。",
+    "category": "history",
+    "rarity": "N",
+    "sourceType": "history"
+  },
+  {
+    "value": 18,
+    "title": "成年",
+    "description": "日本の成年年齢は18歳（2022年〜）。",
+    "category": "culture",
+    "rarity": "SR",
+    "sourceType": "culture"
+  },
+  {
+    "value": 18.1,
+    "title": "1月18日 118番の日",
+    "description": "1月18日は海上保安庁の緊急通報番号118を周知する日。",
+    "category": "anniversary",
+    "rarity": "R",
+    "sourceType": "local"
+  },
+  {
+    "value": 18.2,
+    "title": "2月18日 エアメールの日",
+    "description": "1911年2月18日にインドで世界初の公式航空郵便が飛んだ。",
+    "category": "history",
+    "rarity": "SR",
+    "sourceType": "history"
+  },
+  {
+    "value": 18.3,
+    "title": "3月18日 点字ブロックの日",
+    "description": "岡山で世界初の点字ブロックが敷設された日にちなむ。",
+    "category": "history",
+    "rarity": "SR",
+    "sourceType": "local"
+  },
+  {
+    "value": 18.4,
+    "title": "4月18日 発明の日",
+    "description": "1885年4月18日に専売特許条例が公布されたことを記念。",
+    "category": "history",
+    "rarity": "SR",
+    "sourceType": "history"
+  },
+  {
+    "value": 18.5,
+    "title": "5月18日 国際博物館の日",
+    "description": "5月18日は博物館の価値を広める国際デー。",
+    "category": "culture",
+    "rarity": "R",
+    "sourceType": "anniversary"
+  },
+  {
+    "value": 18.6,
+    "title": "6月18日 おにぎりの日",
+    "description": "石川県の遺跡出土文字にちなみ制定された日本の食文化記念日。",
+    "category": "culture",
+    "rarity": "N",
+    "sourceType": "culture"
+  },
+  {
+    "value": 18.7,
+    "title": "7月18日 光化学スモッグ注意報",
+    "description": "日本で初めて光化学スモッグ注意報が出た日付として知られる。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "science"
+  },
+  {
+    "value": 18.8,
+    "title": "8月18日 高校野球記念日",
+    "description": "1915年8月18日に全国中等学校優勝野球大会が開幕した。",
+    "category": "history",
+    "rarity": "SR",
+    "sourceType": "sports"
+  },
+  {
+    "value": 18.9,
+    "title": "9月18日 かいわれ大根の日",
+    "description": "数字の8を横にすると∞に見えることから18日が選ばれた食の記念日。",
+    "category": "culture",
+    "rarity": "N",
+    "sourceType": "culture"
+  },
+  {
+    "value": 19,
+    "title": "ボルト200m世界記録",
+    "description": "2009年ウサイン・ボルト200m19.19秒。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "sports",
+    "shortTitle": "200m記録"
+  },
+  {
+    "value": 19.1,
+    "title": "男子200m世界記録級",
+    "description": "男子200m世界記録は19.19秒。19.1はその伝説的タイム帯に直結する。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "sports",
+    "shortTitle": "200m WR帯"
+  },
+  {
+    "value": 19.2,
+    "title": "ボルト200m世界記録",
+    "description": "2009年19.19秒。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "sports",
+    "shortTitle": "200m記録"
+  },
+  {
+    "value": 19.3,
+    "title": "19秒3台の壁",
+    "description": "200mで19秒3台に入る選手は歴代でも極少数。短距離エリートの領域。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports"
+  },
+  {
+    "value": 19.4,
+    "title": "200m世界歴代上位帯",
+    "description": "19秒4台はオリンピック決勝でも勝負になる超高速レンジ。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports"
+  },
+  {
+    "value": 19.5,
+    "title": "200m五輪決勝ライン",
+    "description": "男子200mで19秒5台は金メダル争いに絡むことが多い。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "sports"
+  },
+  {
+    "value": 19.6,
+    "title": "世界的スプリンター水準",
+    "description": "19秒6台は世界陸上の常連クラスが狙う数字。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "sports"
+  },
+  {
+    "value": 19.7,
+    "title": "超高速200m",
+    "description": "19秒7台でも歴代で見れば十分に歴史級の好記録。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "sports"
+  },
+  {
+    "value": 19.8,
+    "title": "19秒台フィニッシュ",
+    "description": "200mを20秒切りする19秒台は、短距離界で一つの勲章。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports"
+  },
+  {
+    "value": 19.9,
+    "title": "20秒切り直前",
+    "description": "19.9は20秒の壁を越えたことを示す、200mの象徴的な数字。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "sports"
+  },
+  {
+    "value": 20,
+    "title": "日本の成年",
+    "description": "2022年まで日本の成年年齢は20歳だった。",
+    "category": "culture",
+    "rarity": "SR",
+    "sourceType": "culture"
+  },
+  {
+    "value": 20.1,
+    "title": "50m自由形トップ帯",
+    "description": "50m自由形では20秒前半が世界頂上の領域。20.1はその象徴。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports"
+  },
+  {
+    "value": 20.2,
+    "title": "短距離水泳の極限",
+    "description": "20秒2台の50m自由形はスタートと浮き上がりの精度が勝敗を分ける。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "sports"
+  },
+  {
+    "value": 20.3,
+    "title": "世界大会決勝級",
+    "description": "50m自由形で20.3付近は世界大会で決勝を争える速度域。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "sports"
+  },
+  {
+    "value": 20.4,
+    "title": "スプリント泳法の完成度",
+    "description": "20秒4台は水の抵抗を抑えた理想フォームが求められる記録帯。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "sports"
+  },
+  {
+    "value": 20.5,
+    "title": "反応差が効く世界",
+    "description": "20秒台前半ではスタート反応の0.05秒差が順位を大きく変える。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "sports"
+  },
+  {
+    "value": 20.6,
+    "title": "50m自由形準決勝級",
+    "description": "20.6前後は国際大会で準決勝を狙える実戦的タイム。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "sports"
+  },
+  {
+    "value": 20.7,
+    "title": "0.1秒の価値",
+    "description": "20.7から20.6への短縮でも世界順位は大きく動く。短距離競泳の厳しさ。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "sports"
+  },
+  {
+    "value": 20.8,
+    "title": "20秒台スプリンター",
+    "description": "50mを20秒台で泳げるだけで世界トップ層の指標になる。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "sports"
+  },
+  {
+    "value": 20.9,
+    "title": "パンパース50m自由形",
+    "description": "2022年20.91秒（男子世界記録）。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports",
+    "shortTitle": "パンパース50m自由形"
+  },
+  {
+    "value": 21,
+    "title": "女子200m世界記録",
+    "description": "1988年フローレンス・グリフィス＝ジョイナー21.34秒。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "sports",
+    "shortTitle": "女子200m"
+  },
+  {
+    "value": 21.1,
+    "title": "女子200m世界記録圏",
+    "description": "女子200m世界記録は21.34秒。21.1はその歴史的水準に近い。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "sports"
+  },
+  {
+    "value": 21.2,
+    "title": "女子200mエリート帯",
+    "description": "21秒2台は女子200mで時代を代表するスプリンターの数字。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports"
+  },
+  {
+    "value": 21.3,
+    "title": "女子200m世界記録",
+    "description": "グリフィス＝ジョイナー21.34秒。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "sports",
+    "shortTitle": "女子200m"
+  },
+  {
+    "value": 21.4,
+    "title": "21秒前半の価値",
+    "description": "21秒4台は世界大会優勝候補に入るスピード。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports"
+  },
+  {
+    "value": 21.5,
+    "title": "オリンピック決勝圏",
+    "description": "女子200mで21.5前後は決勝メダル争いに届くことがある。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "sports"
+  },
+  {
+    "value": 21.6,
+    "title": "世界上位の厚い層",
+    "description": "21秒6台は世界トップ層が密集する競争レンジ。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "sports"
+  },
+  {
+    "value": 21.7,
+    "title": "ドレッセル50m自由形",
+    "description": "2017年21.75秒。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports",
+    "shortTitle": "ドレッセル50m自由形"
+  },
+  {
+    "value": 21.8,
+    "title": "国際大会での勝負タイム",
+    "description": "21.8前後は大会条件次第で表彰台に絡む現実的な数字。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "sports"
+  },
+  {
+    "value": 21.9,
+    "title": "22秒の壁直前",
+    "description": "21.9は女子200mで22秒切りを達成したことを示す一線。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "sports"
+  },
+  {
+    "value": 22,
+    "title": "2時間マラソン",
+    "description": "2023年キプチョゲがマラソン2:00:35で世界記録更新。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "sports",
+    "shortTitle": "2時間マラソン"
+  },
+  {
+    "value": 22.1,
+    "title": "100mバタフライ女子上位帯",
+    "description": "女子100mバタフライ短水路の上位層は22秒台前半スプリットを叩く。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "sports"
+  },
+  {
+    "value": 22.2,
+    "title": "卓球のリズム数",
+    "description": "11点先取の卓球は2セットで22点。22.2は攻防のテンポを想起させる数字。",
+    "category": "culture",
+    "rarity": "N",
+    "sourceType": "sports"
+  },
+  {
+    "value": 22.3,
+    "title": "競泳50m女性トップ帯",
+    "description": "女子50m種目では22秒台が世界記録級のレンジとして現れる。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports"
+  },
+  {
+    "value": 22.4,
+    "title": "男子110mハードル上位帯",
+    "description": "110mHは13秒を切る争いだが、通過局面の速度換算で22秒台の周期管理が使われる。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "sports"
+  },
+  {
+    "value": 22.5,
+    "title": "ハロ現象の角半径",
+    "description": "太陽や月の周囲に出る22度ハロは、実測で約22.5度に見えることがある。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "science",
+    "shortTitle": "22度ハロ"
+  },
+  {
+    "value": 22.6,
+    "title": "世界陸上ラップ解析値",
+    "description": "短距離の加速区間を合算すると22秒台の解析値が指標として使われる。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "sports"
+  },
+  {
+    "value": 22.7,
+    "title": "女子200m国際級",
+    "description": "女子200mで22.7は国際大会で準決勝級の実力を示す。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "sports"
+  },
+  {
+    "value": 22.8,
+    "title": "短距離競泳の争点",
+    "description": "22.8と22.9の差はタッチ一回分。コンマ1秒が勝敗を決める。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "sports"
+  },
+  {
+    "value": 22.9,
+    "title": "女子50m自由形記録帯",
+    "description": "女子50m自由形の世界記録は22秒台。22.9は国際トップ帯の数字。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports"
+  },
+  {
+    "value": 23,
+    "title": "女子マラソンWR",
+    "description": "2023年ティグスト・アセファ2:11:53。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "sports",
+    "shortTitle": "女子マラソン"
+  },
+  {
+    "value": 23.1,
+    "title": "23対1の遺伝配分",
+    "description": "人の染色体は23対。23.1は生命科学で頻出する23という数を直感的に示す。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "science"
+  },
+  {
+    "value": 23.2,
+    "title": "NBA背番号23の系譜",
+    "description": "23はバスケットボールの象徴的な背番号。文化的アイコンとして定着している。",
+    "category": "culture",
+    "rarity": "SR",
+    "sourceType": "sports",
+    "shortTitle": "背番号23"
+  },
+  {
+    "value": 23.3,
+    "title": "23時台の深夜番組文化",
+    "description": "日本のテレビで23時台はニュースとバラエティが交差する時間帯。",
+    "category": "culture",
+    "rarity": "N",
+    "sourceType": "culture"
+  },
+  {
+    "value": 23.4,
+    "title": "地軸傾斜角",
+    "description": "地球の地軸傾斜は約23.4度。季節が生まれる直接の理由になる。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "science",
+    "shortTitle": "地軸23.4度"
+  },
+  {
+    "value": 23.5,
+    "title": "冬至夏至の根拠角",
+    "description": "太陽高度の季節差は地軸傾斜約23.5度で説明できる。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "science"
+  },
+  {
+    "value": 23.6,
+    "title": "天文計算の丸め値",
+    "description": "地軸傾斜は近年23.4〜23.5度付近で変化し、教科書で23.6度表記も使われる。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "science"
+  },
+  {
+    "value": 23.7,
+    "title": "サッカー50m自由形女子",
+    "description": "2023年23.67秒。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports",
+    "shortTitle": "サッカー50m自由形女子"
+  },
+  {
+    "value": 23.8,
+    "title": "軌道要素の近似値",
+    "description": "地球の傾き変動を扱う近似式では23.8度台が現れる区間がある。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "science"
+  },
+  {
+    "value": 23.9,
+    "title": "NBA3ポイントライン",
+    "description": "NBAトップの3ポイントラインは23フィート9インチ。23.9はその象徴値。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "sports",
+    "shortTitle": "3PTライン"
+  },
+  {
+    "value": 24,
+    "title": "ルービック4×4",
+    "description": "4×4キューブの世界記録は20秒台。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "sports"
+  },
+  {
+    "value": 24.1,
+    "title": "24時間制の始まり",
+    "description": "1日は24時間。24.1は日周リズムを連想させる基本数字。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "science"
+  },
+  {
+    "value": 24.2,
+    "title": "バスケのショットクロック由来",
+    "description": "バスケットボールは24秒以内にシュート。攻防のテンポを規定する。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports"
+  },
+  {
+    "value": 24.3,
+    "title": "世界時差帯の数",
+    "description": "理論上の時差帯は24区分。24.3は地球時間の分割を思い出させる。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "science"
+  },
+  {
+    "value": 24.4,
+    "title": "1日の地球自転時間",
+    "description": "恒星日に基づく地球自転は約23時間56分で、24時間に極めて近い。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "science"
+  },
+  {
+    "value": 24.5,
+    "title": "50m自由形女子",
+    "description": "2023年23.67秒。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports",
+    "shortTitle": "50m自由形女子"
+  },
+  {
+    "value": 24.6,
+    "title": "火星の1日",
+    "description": "火星の1日は約24時間39分。24.6時間として覚えられる。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "science",
+    "shortTitle": "火星の1日"
+  },
+  {
+    "value": 24.7,
+    "title": "24/7という表現",
+    "description": "24時間7日間を表す24/7は、ネット時代の常時稼働文化を象徴する。",
+    "category": "culture",
+    "rarity": "R",
+    "sourceType": "culture"
+  },
+  {
+    "value": 24.8,
+    "title": "連続稼働サーバー文化",
+    "description": "24.8は24/7運用にわずかな余裕を足したような、現代ITの体感値。",
+    "category": "culture",
+    "rarity": "N",
+    "sourceType": "culture"
+  },
+  {
+    "value": 24.9,
+    "title": "25時間直前",
+    "description": "24.9は1日をほぼ超える長さで、耐久競技や徹夜配信の話題で使われる。",
+    "category": "culture",
+    "rarity": "N",
+    "sourceType": "culture"
+  },
+  {
+    "value": 25,
+    "title": "ルービック5×5",
+    "description": "5×5キューブの世界記録は30秒台。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "sports"
+  },
+  {
+    "value": 25.1,
+    "title": "短水路25mの象徴",
+    "description": "競泳の短水路は25m。25.1はこの基準値に最も近いスロット。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports",
+    "shortTitle": "短水路25m"
+  },
+  {
+    "value": 25.2,
+    "title": "25m往復の戦略",
+    "description": "短水路ではターン技術が成績に直結し、25m単位でレースが設計される。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "sports"
+  },
+  {
+    "value": 25.3,
+    "title": "平泳ぎ50m世界級",
+    "description": "男子50m平泳ぎは25秒台が世界最高峰の戦いになる。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports"
+  },
+  {
+    "value": 25.4,
+    "title": "タッチ差の世界",
+    "description": "50m種目では25.4と25.5の差で順位が大きく入れ替わる。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "sports"
+  },
+  {
+    "value": 25.5,
+    "title": "1/2を示す端数",
+    "description": "25.5は半端数の代表値で、計測や統計で中央値として現れやすい。",
+    "category": "math",
+    "rarity": "N",
+    "sourceType": "math"
+  },
+  {
+    "value": 25.6,
+    "title": "256の縮尺数字",
+    "description": "25.6を10倍すると256。2の8乗として情報技術で特に有名な数。",
+    "category": "culture",
+    "rarity": "SR",
+    "sourceType": "culture",
+    "shortTitle": "2の8乗"
+  },
+  {
+    "value": 25.7,
+    "title": "コンピュータの区切り",
+    "description": "256に近い25.7は、2進数文化の境目を連想させる。",
+    "category": "culture",
+    "rarity": "N",
+    "sourceType": "culture"
+  },
+  {
+    "value": 25.8,
+    "title": "半導体の微細化話題",
+    "description": "回路線幅の世代比較で、25nm台は技術史を語る分岐点として登場する。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "science"
+  },
+  {
+    "value": 25.9,
+    "title": "50m平泳ぎ世界記録",
+    "description": "男子50m平泳ぎ世界記録は25.95秒。25.9は歴史的な速さに直結する。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "sports",
+    "shortTitle": "平泳ぎWR"
+  },
+  {
+    "value": 26,
+    "title": "アルファベット26文字",
+    "description": "英語アルファベットは26文字。教育や暗号で頻繁に使われる基本数。",
+    "category": "culture",
+    "rarity": "SR",
+    "sourceType": "culture",
+    "shortTitle": "26文字"
+  },
+  {
+    "value": 26.1,
+    "title": "マラソン完走文化",
+    "description": "26.1は26.2マイルのフルマラソン完走に迫る数字としてランナーに刺さる。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "sports"
+  },
+  {
+    "value": 26.2,
+    "title": "マラソン距離",
+    "description": "マラソンの正式距離42.195km。26.2マイルの近似。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports",
+    "shortTitle": "マラソン"
+  },
+  {
+    "value": 26.3,
+    "title": "ランナー向け練習距離",
+    "description": "26km台のロング走はマラソン調整で使われる実戦的な距離帯。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "sports"
+  },
+  {
+    "value": 26.4,
+    "title": "摂氏華氏の交差話題",
+    "description": "26.4度付近は室温設定の快適域として省エネ議論で扱われる。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "science"
+  },
+  {
+    "value": 26.5,
+    "title": "競泳長距離のラップ",
+    "description": "長距離競泳の序盤100mラップで26秒台が戦術目安になる。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "sports"
+  },
+  {
+    "value": 26.6,
+    "title": "大気温の危険サイン手前",
+    "description": "夏日の指標25度を超える26.6度は、体調管理が必要になる温度帯。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "science"
+  },
+  {
+    "value": 26.7,
+    "title": "ボウリング完全試合換算",
+    "description": "300点満点を11フレーム平均で割ると27前後。26.7は高アベレージ感を示す。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "sports"
+  },
+  {
+    "value": 26.8,
+    "title": "気温と湿度の不快指数",
+    "description": "26.8度は湿度次第で蒸し暑さが一気に増す境界として語られる。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "science"
+  },
+  {
+    "value": 26.9,
+    "title": "1マイル世界記録換算",
+    "description": "1マイル競走のラップ換算で26秒台は世界最高峰の巡航速度。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports"
+  },
+  {
+    "value": 27,
+    "title": "F1ピットストップ",
+    "description": "2019年レッドブル26.17秒（4タイヤ交換）。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports",
+    "shortTitle": "F1ピット"
+  },
+  {
+    "value": 27.1,
+    "title": "27クラブの数字",
+    "description": "伝説的ミュージシャンが27歳で亡くなった例から27クラブという語が生まれた。",
+    "category": "culture",
+    "rarity": "SR",
+    "sourceType": "culture",
+    "shortTitle": "27クラブ"
+  },
+  {
+    "value": 27.2,
+    "title": "月の公転周期に近い",
+    "description": "月の恒星月は約27.3日。27.2はその近接値として覚えやすい。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "science"
+  },
+  {
+    "value": 27.3,
+    "title": "月の恒星月",
+    "description": "月が恒星に対して地球を一周する周期は約27.3日。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "science",
+    "shortTitle": "恒星月"
+  },
+  {
+    "value": 27.4,
+    "title": "月周期の実用近似",
+    "description": "天文カレンダーの近似計算では27.4日表記が使われることがある。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "science"
+  },
+  {
+    "value": 27.5,
+    "title": "持久走の壁",
+    "description": "長距離練習で27分30秒切りは市民ランナー上級者の目安になる。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "sports"
+  },
+  {
+    "value": 27.6,
+    "title": "太陽自転の緯度差",
+    "description": "太陽の自転周期は緯度で変わり、赤道付近で約27日台になる。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "science"
+  },
+  {
+    "value": 27.7,
+    "title": "極限耐久配信の目安",
+    "description": "27.7時間のような長時間連続配信は集中力と体力の境界を試す。",
+    "category": "culture",
+    "rarity": "N",
+    "sourceType": "culture"
+  },
+  {
+    "value": 27.8,
+    "title": "睡眠不足研究の閾値",
+    "description": "覚醒27時間を超えると認知機能が大幅に低下する研究が知られる。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "science"
+  },
+  {
+    "value": 27.9,
+    "title": "28直前の月リズム",
+    "description": "27.9は28日に近く、月関連の周期を扱う説明で使いやすい。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "science"
+  },
+  {
+    "value": 28,
+    "title": "二十八宿",
+    "description": "東アジア天文学では月の通り道を二十八宿に分けて観測してきた。",
+    "category": "history",
+    "rarity": "SR",
+    "sourceType": "history",
+    "shortTitle": "二十八宿"
+  },
+  {
+    "value": 28.1,
+    "title": "2月の日数基準",
+    "description": "平年の2月は28日。28.1は暦の基本数字を連想させる。",
+    "category": "anniversary",
+    "rarity": "R",
+    "sourceType": "anniversary"
+  },
+  {
+    "value": 28.2,
+    "title": "閏年との比較",
+    "description": "2月28日と29日の違いは、暦と地球公転周期の調整から生まれる。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "science"
+  },
+  {
+    "value": 28.3,
+    "title": "50mバタフライ",
+    "description": "男子50mバタフライ世界記録は22秒台。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "sports",
+    "shortTitle": "50mバタフライ"
+  },
+  {
+    "value": 28.4,
+    "title": "自転車タイヤ径",
+    "description": "実測で外径28インチ相当のツーリング車は欧州で広く使われる。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "sports"
+  },
+  {
+    "value": 28.5,
+    "title": "気温28.5度の体感",
+    "description": "湿度が高い日には28.5度でも熱中症リスクが上がる。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "science"
+  },
+  {
+    "value": 28.6,
+    "title": "最高気温の境界線",
+    "description": "28.6度は真夏日30度の手前で、服装と水分計画が重要になる温度帯。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "science"
+  },
+  {
+    "value": 28.7,
+    "title": "持久系スポーツの最適域",
+    "description": "一部の持久系競技では28度台後半でパフォーマンス低下が目立つ。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "sports"
+  },
+  {
+    "value": 28.8,
+    "title": "末広がりの重なり",
+    "description": "8を含む28.8は縁起の良い数字として車番や部屋番号でも人気。",
+    "category": "lucky",
+    "rarity": "SR",
+    "sourceType": "lucky"
+  },
+  {
+    "value": 28.9,
+    "title": "月齢終盤の目安",
+    "description": "29.5日の朔望月に対し28.9は新月直前に近い月齢帯。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "science"
+  },
+  {
+    "value": 29,
+    "title": "29日は肉の日",
+    "description": "毎月29日は語呂合わせで肉の日。飲食店の定番キャンペーン日として定着した。",
+    "category": "culture",
+    "rarity": "SR",
+    "sourceType": "culture",
+    "shortTitle": "肉の日"
+  },
+  {
+    "value": 29.1,
+    "title": "肉の日前日比",
+    "description": "29.1は29を中心にした販促数字として覚えやすい。",
+    "category": "culture",
+    "rarity": "N",
+    "sourceType": "culture"
+  },
+  {
+    "value": 29.2,
+    "title": "2月29日 うるう日",
+    "description": "4年に1度の2月29日は地球公転と暦のずれを補正する日。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "anniversary",
+    "shortTitle": "うるう日"
+  },
+  {
+    "value": 29.3,
+    "title": "秒速換算で約29",
+    "description": "地球の公転速度は秒速約29.8km。29.3はその実感的な近傍値。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "science"
+  },
+  {
+    "value": 29.4,
+    "title": "土星公転周期の近似",
+    "description": "土星の太陽周回は約29.5年。29.4でもほぼ同じ周期帯を示す。",
+    "category": "science",
+    "rarity": "SR",
+    "sourceType": "science"
+  },
+  {
+    "value": 29.5,
+    "title": "朔望月",
+    "description": "新月から次の新月までの朔望月は約29.5日。太陰暦の基礎になる。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "science",
+    "shortTitle": "朔望月"
+  },
+  {
+    "value": 29.6,
+    "title": "月齢計算の丸め値",
+    "description": "実用カレンダーでは29.5日を29.6日に丸めて扱う場合がある。",
+    "category": "science",
+    "rarity": "N",
+    "sourceType": "science"
+  },
+  {
+    "value": 29.7,
+    "title": "公転速度の近接値",
+    "description": "地球公転速度29.8km/sに近い29.7は天文学解説で比較に使いやすい。",
+    "category": "science",
+    "rarity": "R",
+    "sourceType": "science"
+  },
+  {
+    "value": 29.8,
+    "title": "地球の公転速度",
+    "description": "地球は太陽の周りを秒速約29.8kmで公転している。",
+    "category": "science",
+    "rarity": "SSR",
+    "sourceType": "science",
+    "shortTitle": "地球公転速度"
+  },
+  {
+    "value": 29.9,
+    "title": "30秒目前",
+    "description": "29.9は30.0直前。ストップウォッチで最も惜しい数字として印象に残る。",
+    "category": "culture",
+    "rarity": "R",
+    "sourceType": "culture"
+  },
+  {
+    "value": 30,
+    "title": "CM30秒",
+    "description": "テレビCMの定番30秒。",
+    "category": "culture",
+    "rarity": "R",
+    "sourceType": "culture"
+  }
+]

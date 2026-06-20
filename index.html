@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>秒数ストップウォッチ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>秒数ストップウォッチ</h1>
+      <p class="subtitle">止めた秒数にまつわる出来事を教えてくれる</p>
+      <p class="event-count" id="eventCount"></p>
+    </header>
+
+    <main>
+      <div class="timer-display" id="timer" aria-live="polite">00.00</div>
+
+      <div class="controls">
+        <button class="btn btn-primary" id="startBtn">スタート</button>
+        <button class="btn btn-stop" id="stopBtn" disabled>ストップ</button>
+        <button class="btn btn-secondary" id="resetBtn">リセット</button>
+      </div>
+
+      <section class="result" id="result" hidden>
+        <div class="result-header">
+          <span class="result-label">あなたの秒数</span>
+          <span class="result-time" id="resultTime"></span>
+        </div>
+        <div id="eventList"></div>
+        <p class="hint" id="hint"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>±0.09秒以内に一致したエピソードを1件だけ表示します。</p>
+    </footer>
+  </div>
+
+  <script src="events-precise.js"></script>
+  <script src="events.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
