@@ -1,8 +1,11 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { safeGetStorage, safeSetStorage } from "@/lib/storage";
 
-const STORAGE_KEY = "second-story-read-seconds";
+const DISCOVERED_KEY = "seconds-story.v1.discovered";
+const PLAY_COUNT_KEY = "seconds-story.v1.playCount";
+const LAST_RESULT_KEY = "seconds-story.v1.lastResult";
 const TOTAL_STORIES = 30;
 
 function normalizeSeconds(values: unknown): number[] {
@@ -14,14 +17,11 @@ function normalizeSeconds(values: unknown): number[] {
 
 export function useStoryCollection() {
   const [readSeconds, setReadSeconds] = useState<number[]>([]);
+  const [playCount, setPlayCount] = useState(0);
 
   useEffect(() => {
-    try {
-      const raw = localStorage.getItem(STORAGE_KEY);
-      if (raw) setReadSeconds(normalizeSeconds(JSON.parse(raw)));
-    } catch {
-      /* ignore */
-    }
+    setReadSeconds(normalizeSeconds(safeGetStorage<unknown>(DISCOVERED_KEY, [])));
+    setPlayCount(safeGetStorage<number>(PLAY_COUNT_KEY, 0));
   }, []);
 
   const readSet = useMemo(() => new Set(readSeconds), [readSeconds]);
@@ -30,10 +30,22 @@ export function useStoryCollection() {
     setReadSeconds((prev) => {
       if (prev.includes(second)) return prev;
       const next = normalizeSeconds([...prev, second]);
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+      safeSetStorage(DISCOVERED_KEY, next);
       return next;
     });
   }, []);
+
+  const recordResult = useCallback(
+    (result: { stoppedSeconds: number; storySecond: number; isNew: boolean }) => {
+      setPlayCount((prev) => {
+        const next = prev + 1;
+        safeSetStorage(PLAY_COUNT_KEY, next);
+        return next;
+      });
+      safeSetStorage(LAST_RESULT_KEY, result);
+    },
+    []
+  );
 
   const count = readSeconds.length;
   const percent = Math.round((count / TOTAL_STORIES) * 100);
@@ -42,8 +54,10 @@ export function useStoryCollection() {
     readSeconds,
     readSet,
     markRead,
+    recordResult,
     count,
     total: TOTAL_STORIES,
     percent,
+    playCount,
   };
 }

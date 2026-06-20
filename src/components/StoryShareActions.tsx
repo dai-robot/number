@@ -1,15 +1,22 @@
 "use client";
 
 import type { SecondStory } from "@/data/stories";
+import { track } from "@/lib/analytics";
+
+const PRODUCTION_URL = "https://number-flame.vercel.app/";
 
 export function buildStoryShareText({
   stoppedSeconds,
   story,
+  count,
+  total,
 }: {
   stoppedSeconds: number;
   story: SecondStory;
+  count: number;
+  total: number;
 }) {
-  return `${stoppedSeconds.toFixed(2)}秒で止まった。\n\n【${story.second}秒の物語】\n\n${story.story.join("\n")}\n\n#秒の物語`;
+  return `${stoppedSeconds.toFixed(2)}秒で止まった。\n\n【${story.second}秒の物語】\n\n${story.story.join("\n")}\n\n${count} / ${total} 発見\n\n#秒の物語\n${PRODUCTION_URL}`;
 }
 
 function wrapText(
@@ -39,9 +46,13 @@ function wrapText(
 function saveStoryImage({
   stoppedSeconds,
   story,
+  count,
+  total,
 }: {
   stoppedSeconds: number;
   story: SecondStory;
+  count: number;
+  total: number;
 }) {
   const canvas = document.createElement("canvas");
   canvas.width = 1080;
@@ -97,11 +108,12 @@ function saveStoryImage({
 
   ctx.fillStyle = "#71717a";
   ctx.font = "500 36px sans-serif";
-  ctx.fillText("#秒の物語", 540, 1740);
+  ctx.fillText(`${count} / ${total} 発見`, 540, 1710);
 
   ctx.fillStyle = "#52525b";
   ctx.font = "500 30px sans-serif";
-  ctx.fillText(window.location.origin, 540, 1805);
+  ctx.fillText("#秒の物語", 540, 1765);
+  ctx.fillText(PRODUCTION_URL, 540, 1818);
 
   const link = document.createElement("a");
   link.download = `second-story-${story.second}.png`;
@@ -112,13 +124,39 @@ function saveStoryImage({
 export function StoryShareActions({
   stoppedSeconds,
   story,
+  count,
+  total,
 }: {
   stoppedSeconds: number;
   story: SecondStory;
+  count: number;
+  total: number;
 }) {
-  const shareToX = () => {
-    const text = buildStoryShareText({ stoppedSeconds, story });
-    window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`, "_blank");
+  const shareToX = async () => {
+    const text = buildStoryShareText({ stoppedSeconds, story, count, total });
+    track("share_click", { method: "x", storySecond: story.second });
+    if (navigator.share) {
+      try {
+        await navigator.share({ text, url: PRODUCTION_URL });
+        return;
+      } catch {
+        // fall through
+      }
+    }
+    try {
+      window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`, "_blank");
+    } catch {
+      try {
+        await navigator.clipboard.writeText(text);
+      } catch {
+        // ignore
+      }
+    }
+  };
+
+  const onSaveImage = () => {
+    track("image_save_click", { storySecond: story.second });
+    saveStoryImage({ stoppedSeconds, story, count, total });
   };
 
   return (
@@ -130,7 +168,7 @@ export function StoryShareActions({
         Xでシェア
       </button>
       <button
-        onClick={() => saveStoryImage({ stoppedSeconds, story })}
+        onClick={onSaveImage}
         className="min-h-12 rounded-xl bg-gradient-to-r from-amber-400 to-orange-500 px-3 py-3 text-sm font-black text-black transition active:scale-95"
       >
         画像保存

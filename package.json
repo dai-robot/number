@@ -8,7 +8,8 @@
     "start": "next start",
     "generate-trivia": "node scripts/build-trivia-301.js",
     "validate-logic": "node scripts/validate-logic.js",
-    "validate-facts": "node scripts/validate-facts.js"
+    "validate-facts": "node scripts/validate-facts.js",
+    "validate-stories": "node scripts/validate-stories.js"
   },
   "dependencies": {
     "next": "^15.3.3",

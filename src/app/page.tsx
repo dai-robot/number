@@ -7,18 +7,22 @@ import { StoryShareActions } from "@/components/StoryShareActions";
 import { TimerRing } from "@/components/TimerRing";
 import { useStoryCollection } from "@/hooks/useStoryCollection";
 import { useSound } from "@/hooks/useSound";
-import { getStoryBySecond, getStorySecond, type SecondStory } from "@/data/stories";
+import type { SecondStory } from "@/data/stories";
+import { track } from "@/lib/analytics";
 import { clampSeconds, formatSeconds, MAX_SECONDS } from "@/lib/findTrivia";
+import { mapSecondsToStory } from "@/lib/storyMapping";
 
+type GameState = "idle" | "running" | "result";
 interface StoryResult {
   stoppedSeconds: number;
   storySecond: number;
   story: SecondStory;
+  isNew: boolean;
 }
 
 export default function Home() {
   const [display, setDisplay] = useState("0.00");
-  const [running, setRunning] = useState(false);
+  const [gameState, setGameState] = useState<GameState>("idle");
   const [result, setResult] = useState<StoryResult | null>(null);
   const [screen, setScreen] = useState<"play" | "collection">("play");
 
@@ -28,22 +32,29 @@ export default function Home() {
 
   const { init, playStart, playStop, playTick } = useSound();
   const storyCollection = useStoryCollection();
-  const { markRead } = storyCollection;
+  const { markRead, readSet, recordResult } = storyCollection;
+  const running = gameState === "running";
+
+  useEffect(() => {
+    track("home_view");
+  }, []);
 
   const finishWithValue = useCallback(
     (raw: number) => {
       const stoppedSeconds = clampSeconds(raw);
-      const storySecond = getStorySecond(stoppedSeconds);
-      const story = getStoryBySecond(storySecond);
+      const { storySecond, story } = mapSecondsToStory(stoppedSeconds);
+      const isNew = !readSet.has(storySecond);
 
       elapsedRef.current = 0;
-      setRunning(false);
+      setGameState("result");
       setDisplay(formatSeconds(stoppedSeconds));
-      setResult({ stoppedSeconds, storySecond, story });
+      setResult({ stoppedSeconds, storySecond, story, isNew });
       markRead(storySecond);
+      recordResult({ stoppedSeconds, storySecond, isNew });
+      track("result_view", { storySecond, category: story.category, tone: story.tone, isNew });
       playStop();
     },
-    [playStop, markRead]
+    [playStop, markRead, readSet, recordResult]
   );
 
   const tick = useCallback(() => {
@@ -65,11 +76,12 @@ export default function Home() {
 
   const handleStart = () => {
     if (running) return;
+    track("start_tap");
     init();
     playStart();
     cancelAnimationFrame(rafRef.current);
     elapsedRef.current = 0;
-    setRunning(true);
+    setGameState("running");
     setResult(null);
     setDisplay("0.00");
     startTimeRef.current = performance.now();
@@ -81,13 +93,14 @@ export default function Home() {
     cancelAnimationFrame(rafRef.current);
     const now = performance.now();
     const raw = elapsedRef.current + (now - startTimeRef.current) / 1000;
+    track("stop_tap", { stoppedSeconds: clampSeconds(raw) });
     finishWithValue(raw);
   };
 
   const handleReset = () => {
     cancelAnimationFrame(rafRef.current);
     elapsedRef.current = 0;
-    setRunning(false);
+    setGameState("idle");
     setDisplay("0.00");
     setResult(null);
   };
@@ -138,7 +151,10 @@ export default function Home() {
           </header>
 
           <button
-            onClick={() => setScreen("collection")}
+            onClick={() => {
+              track("catalog_open");
+              setScreen("collection");
+            }}
             className="w-full rounded-2xl border border-orange-500/25 bg-gradient-to-r from-orange-950/40 via-zinc-950/70 to-violet-950/40 px-3 py-2 text-left active:scale-[0.99]"
           >
             <div className="flex items-center justify-between">
@@ -194,13 +210,27 @@ export default function Home() {
           </details>
         </section>
 
-        {result && <StoryResultCard result={result} />}
+        {result && (
+          <StoryResultCard
+            result={result}
+            count={storyCollection.count}
+            total={storyCollection.total}
+          />
+        )}
       </main>
     </>
   );
 }
 
-function StoryResultCard({ result }: { result: StoryResult }) {
+function StoryResultCard({
+  result,
+  count,
+  total,
+}: {
+  result: StoryResult;
+  count: number;
+  total: number;
+}) {
   return (
     <article className="animate-fade-up glass mb-6 w-full overflow-hidden rounded-3xl border border-orange-400/30 bg-gradient-to-br from-orange-950/25 via-zinc-950/80 to-violet-950/25 p-5 shadow-[0_0_40px_rgba(251,146,60,0.12)]">
       <div className="flex items-start justify-between gap-3">
@@ -211,6 +241,9 @@ function StoryResultCard({ result }: { result: StoryResult }) {
           <h2 className="mt-1 text-2xl font-black text-transparent bg-gradient-to-r from-white via-orange-200 to-amber-400 bg-clip-text">
             {result.storySecond}秒の物語
           </h2>
+          <p className="mt-1 text-xs font-black text-emerald-300">
+            {result.isNew ? "NEW" : "既に発見済み"}
+          </p>
         </div>
         <div className="shrink-0 rounded-2xl border border-amber-400/30 bg-amber-500/10 px-3 py-2 text-right">
           <p className="text-[10px] font-bold text-amber-200">{result.story.category}</p>
@@ -235,7 +268,16 @@ function StoryResultCard({ result }: { result: StoryResult }) {
 
       <p className="mt-4 text-sm font-bold text-amber-300">{result.story.shareText}</p>
 
-      <StoryShareActions stoppedSeconds={result.stoppedSeconds} story={result.story} />
+      <p className="mt-3 text-center font-mono text-xs text-zinc-500">
+        物語図鑑 {count} / {total} 発見
+      </p>
+
+      <StoryShareActions
+        stoppedSeconds={result.stoppedSeconds}
+        story={result.story}
+        count={count}
+        total={total}
+      />
     </article>
   );
 }

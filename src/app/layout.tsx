@@ -18,6 +18,16 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   title: "秒の物語",
   description: "止めた秒に、短い人生が出る。",
+  openGraph: {
+    title: "秒の物語",
+    description: "止めた秒に、短い人生が出る。",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "秒の物語",
+    description: "止めた秒に、短い人生が出る。",
+  },
 };
 
 export default function RootLayout({
