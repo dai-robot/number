@@ -24,7 +24,7 @@ export function TimerRing({ running, display, target }: TimerRingProps) {
   return (
     <div className="relative flex items-center justify-center">
       <svg
-        className={`absolute h-52 w-52 sm:h-64 sm:w-64 ${running ? "animate-ring-pulse" : ""}`}
+        className={`absolute h-48 w-48 sm:h-56 sm:w-56 ${running ? "animate-ring-pulse" : ""}`}
         viewBox="0 0 200 200"
         aria-hidden
       >
@@ -114,7 +114,7 @@ export function TimerRing({ running, display, target }: TimerRingProps) {
       </svg>
 
       <div
-        className={`glass relative z-10 flex h-44 w-44 flex-col items-center justify-center rounded-full border sm:h-52 sm:w-52 ${
+        className={`glass relative z-10 flex h-40 w-40 flex-col items-center justify-center rounded-full border sm:h-48 sm:w-48 ${
           running
             ? nearLimit
               ? "border-red-400/40 shadow-[0_0_80px_rgba(239,68,68,0.25)] animate-neon-flicker"
@@ -130,8 +130,8 @@ export function TimerRing({ running, display, target }: TimerRingProps) {
 
         <div
           key={display}
-          className={`animate-digit-pop font-mono text-4xl font-bold tracking-wider sm:text-5xl ${
-            running ? "timer-glow-running text-orange-300" : "timer-glow-idle text-zinc-100"
+          className={`animate-digit-pop font-mono font-bold tracking-wider ${
+            running ? "timer-glow-running text-5xl text-orange-200 sm:text-6xl" : "timer-glow-idle text-4xl text-zinc-100 sm:text-5xl"
           }`}
         >
           {frac !== "" ? (

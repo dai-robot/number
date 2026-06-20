@@ -34,6 +34,7 @@ export default function Home() {
   const storyCollection = useStoryCollection();
   const { markRead, readSet, recordResult } = storyCollection;
   const running = gameState === "running";
+  const hasResult = gameState === "result";
 
   useEffect(() => {
     track("home_view");
@@ -136,87 +137,98 @@ export default function Home() {
   return (
     <>
       <Background />
-      <main className="relative z-10 mx-auto flex min-h-dvh max-w-lg flex-col gap-3 overflow-x-hidden px-3 py-3">
-        <section className="flex min-h-[calc(100dvh-1.5rem)] flex-col justify-between gap-3">
+      <main className="relative z-10 mx-auto flex min-h-[100svh] max-w-lg flex-col gap-3 overflow-x-hidden px-3 py-2">
+        <section className="flex min-h-[calc(100svh-1rem)] flex-col justify-between gap-2 overflow-hidden">
           <header className="text-center">
-            <p className="font-mono text-[10px] font-bold uppercase tracking-[0.35em] text-orange-300/70">
+            <p className="font-mono text-[9px] font-bold uppercase tracking-[0.3em] text-orange-300/70">
               1-30 second micro stories
             </p>
-            <h1 className="mt-1 text-gradient-title text-4xl font-black tracking-tight">
+            <h1 className="text-gradient-title text-3xl font-black tracking-tight">
               秒の物語
             </h1>
-            <p className="mt-1 text-sm font-bold text-zinc-400">
+            <p className="text-xs font-bold text-zinc-400">
               止めた秒に、短い人生が出る。
             </p>
           </header>
 
-          <button
-            onClick={() => {
-              track("catalog_open");
-              setScreen("collection");
-            }}
-            className="w-full rounded-2xl border border-orange-500/25 bg-gradient-to-r from-orange-950/40 via-zinc-950/70 to-violet-950/40 px-3 py-2 text-left active:scale-[0.99]"
-          >
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-[10px] font-black tracking-[0.24em] text-orange-300">
-                  物語図鑑
-                </p>
-                <p className="font-mono text-base font-black text-white">
-                  {storyCollection.count} / {storyCollection.total}
-                </p>
+          {!hasResult ? (
+            <>
+              <button
+                onClick={() => {
+                  track("catalog_open");
+                  setScreen("collection");
+                }}
+                className="w-full rounded-2xl border border-orange-500/25 bg-gradient-to-r from-orange-950/35 via-zinc-950/65 to-violet-950/35 px-3 py-1.5 text-left active:scale-[0.99]"
+              >
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-[9px] font-black tracking-[0.22em] text-orange-300">
+                      物語図鑑
+                    </p>
+                    <p className="font-mono text-sm font-black text-white">
+                      {storyCollection.count} / {storyCollection.total}
+                    </p>
+                  </div>
+                  <div className="text-right">
+                    <p className="font-mono text-2xl font-black leading-none text-transparent bg-gradient-to-b from-white to-orange-300 bg-clip-text">
+                      {storyCollection.percent}%
+                    </p>
+                    <p className="text-[9px] font-bold text-zinc-500">
+                      あと{storyCollection.total - storyCollection.count}話
+                    </p>
+                  </div>
+                </div>
+              </button>
+
+              <TimerRing running={running} display={display} />
+
+              <div className="grid w-full grid-cols-2 gap-2">
+                <button
+                  onClick={handleStart}
+                  disabled={running}
+                  className={`min-h-16 rounded-3xl text-xl font-black text-white transition active:scale-95 disabled:opacity-35 ${
+                    running
+                      ? "bg-gradient-to-b from-zinc-700 to-zinc-900"
+                      : "bg-gradient-to-b from-orange-300 via-orange-500 to-orange-700 shadow-[0_0_36px_rgba(251,146,60,0.38)]"
+                  }`}
+                >
+                  START
+                </button>
+              <button
+                onClick={handleStop}
+                disabled={!running}
+                className={`min-h-16 rounded-3xl text-xl font-black text-white transition active:scale-95 disabled:opacity-35 ${
+                  running
+                    ? "animate-pulse bg-gradient-to-b from-orange-300 via-orange-500 to-orange-700 shadow-[0_0_48px_rgba(251,146,60,0.55)]"
+                    : "bg-gradient-to-b from-zinc-700 to-zinc-900"
+                }`}
+              >
+                STOP
+              </button>
               </div>
-              <p className="font-mono text-3xl font-black text-transparent bg-gradient-to-b from-white to-orange-300 bg-clip-text">
-                {storyCollection.percent}%
+
+              <p className="text-center text-[11px] font-medium text-zinc-500">
+                STARTして、好きな瞬間でSTOP。1〜30秒の物語が出ます。
               </p>
-            </div>
-          </button>
-
-          <TimerRing running={running} display={display} />
-
-          <div className="grid w-full grid-cols-2 gap-2">
-            <button
-              onClick={handleStart}
-              disabled={running}
-              className="min-h-20 rounded-3xl bg-gradient-to-b from-orange-300 via-orange-500 to-orange-700 text-xl font-black text-white shadow-[0_0_36px_rgba(251,146,60,0.38)] transition active:scale-95 disabled:opacity-35"
-            >
-              START
-            </button>
-            <button
-              onClick={handleStop}
-              disabled={!running}
-              className={`min-h-20 rounded-3xl text-xl font-black text-white transition active:scale-95 disabled:opacity-35 ${
-                running
-                  ? "animate-pulse bg-gradient-to-b from-red-400 via-rose-600 to-red-800 shadow-[0_0_48px_rgba(244,63,94,0.55)]"
-                  : "bg-gradient-to-b from-zinc-700 to-zinc-900"
-              }`}
-            >
-              STOP
-            </button>
-          </div>
-
-          <p className="text-center text-xs font-medium text-zinc-500">
-            STARTして、好きな瞬間でSTOP。1〜30秒の物語が出ます。
-          </p>
-
-          <details className="rounded-xl border border-zinc-800 bg-zinc-950/50 px-3 py-2 text-xs text-zinc-500">
-            <summary className="cursor-pointer font-bold text-zinc-400">このゲームについて</summary>
-            <p className="mt-2 leading-relaxed">
-              実際に止めた秒数を四捨五入して、1秒〜30秒の超短編小説を表示します。
-            </p>
-            <button onClick={handleReset} className="mt-2 text-zinc-400 underline">
-              RESET
-            </button>
-          </details>
+            </>
+          ) : (
+            result && (
+              <>
+                <StoryResultCard
+                  result={result}
+                  count={storyCollection.count}
+                  total={storyCollection.total}
+                />
+                <button
+                  onClick={handleReset}
+                  className="min-h-14 w-full rounded-3xl bg-gradient-to-b from-orange-300 via-orange-500 to-orange-700 text-lg font-black text-white shadow-[0_0_36px_rgba(251,146,60,0.34)] transition active:scale-95"
+                >
+                  もう一度
+                </button>
+              </>
+            )
+          )}
         </section>
-
-        {result && (
-          <StoryResultCard
-            result={result}
-            count={storyCollection.count}
-            total={storyCollection.total}
-          />
-        )}
       </main>
     </>
   );
@@ -232,32 +244,32 @@ function StoryResultCard({
   total: number;
 }) {
   return (
-    <article className="animate-fade-up glass mb-6 w-full overflow-hidden rounded-3xl border border-orange-400/30 bg-gradient-to-br from-orange-950/25 via-zinc-950/80 to-violet-950/25 p-5 shadow-[0_0_40px_rgba(251,146,60,0.12)]">
+    <article className="animate-fade-up glass w-full overflow-hidden rounded-3xl border border-orange-400/30 bg-gradient-to-br from-orange-950/25 via-zinc-950/80 to-violet-950/25 p-4 shadow-[0_0_40px_rgba(251,146,60,0.12)]">
       <div className="flex items-start justify-between gap-3">
         <div>
-          <p className="font-mono text-sm text-zinc-400">
+          <p className="font-mono text-xs text-zinc-400">
             {formatSeconds(result.stoppedSeconds)}秒で止まった
           </p>
-          <h2 className="mt-1 text-2xl font-black text-transparent bg-gradient-to-r from-white via-orange-200 to-amber-400 bg-clip-text">
+          <h2 className="mt-0.5 text-xl font-black text-transparent bg-gradient-to-r from-white via-orange-200 to-amber-400 bg-clip-text">
             {result.storySecond}秒の物語
           </h2>
-          <p className="mt-1 text-xs font-black text-emerald-300">
+          <p className="mt-0.5 text-[10px] font-black text-emerald-300">
             {result.isNew ? "NEW" : "既に発見済み"}
           </p>
         </div>
-        <div className="shrink-0 rounded-2xl border border-amber-400/30 bg-amber-500/10 px-3 py-2 text-right">
+        <div className="shrink-0 rounded-2xl border border-amber-400/30 bg-amber-500/10 px-2.5 py-1.5 text-right">
           <p className="text-[10px] font-bold text-amber-200">{result.story.category}</p>
           <p className="mt-0.5 text-[10px] text-zinc-400">{result.story.tone}</p>
         </div>
       </div>
 
-      <div className="mt-5 space-y-2 rounded-2xl border border-white/8 bg-black/25 p-4">
+      <div className="mt-3 space-y-1.5 rounded-2xl border border-white/8 bg-black/25 p-3">
         {result.story.story.map((line, index) => (
           <p
             key={index}
-            className={`text-center text-lg font-bold leading-relaxed ${
+            className={`text-center text-base font-bold leading-relaxed ${
               index === result.story.story.length - 1
-                ? "text-xl text-amber-200"
+                ? "text-lg text-amber-200"
                 : "text-zinc-100"
             }`}
           >
@@ -266,9 +278,9 @@ function StoryResultCard({
         ))}
       </div>
 
-      <p className="mt-4 text-sm font-bold text-amber-300">{result.story.shareText}</p>
+      <p className="mt-3 text-sm font-bold text-amber-300">{result.story.shareText}</p>
 
-      <p className="mt-3 text-center font-mono text-xs text-zinc-500">
+      <p className="mt-2 text-center font-mono text-xs text-zinc-500">
         物語図鑑 {count} / {total} 発見
       </p>
 
