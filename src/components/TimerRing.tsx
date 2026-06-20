@@ -24,7 +24,7 @@ export function TimerRing({ running, display, target }: TimerRingProps) {
   return (
     <div className="relative flex items-center justify-center">
       <svg
-        className={`absolute h-64 w-64 sm:h-72 sm:w-72 ${running ? "animate-ring-pulse" : ""}`}
+        className={`absolute h-52 w-52 sm:h-64 sm:w-64 ${running ? "animate-ring-pulse" : ""}`}
         viewBox="0 0 200 200"
         aria-hidden
       >
@@ -114,12 +114,12 @@ export function TimerRing({ running, display, target }: TimerRingProps) {
       </svg>
 
       <div
-        className={`glass relative z-10 flex h-52 w-52 flex-col items-center justify-center rounded-full border sm:h-60 sm:w-60 ${
+        className={`glass relative z-10 flex h-44 w-44 flex-col items-center justify-center rounded-full border sm:h-52 sm:w-52 ${
           running
             ? nearLimit
               ? "border-red-400/40 shadow-[0_0_80px_rgba(239,68,68,0.25)] animate-neon-flicker"
               : "border-orange-400/30 shadow-[0_0_60px_rgba(251,146,60,0.15)]"
-            : "border-white/8 shadow-[0_0_40px_rgba(0,0,0,0.4)]"
+            : "border-white/8 shadow-[0_0_40px_rgba(0,0,0,0.4)] animate-stop-lock"
         }`}
       >
         {running && <span className="absolute inset-0 rounded-full bg-orange-500/5 animate-pulse" />}
@@ -130,7 +130,7 @@ export function TimerRing({ running, display, target }: TimerRingProps) {
 
         <div
           key={display}
-          className={`animate-digit-pop font-mono text-5xl font-bold tracking-wider sm:text-6xl ${
+          className={`animate-digit-pop font-mono text-4xl font-bold tracking-wider sm:text-5xl ${
             running ? "timer-glow-running text-orange-300" : "timer-glow-idle text-zinc-100"
           }`}
         >

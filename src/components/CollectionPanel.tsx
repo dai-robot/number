@@ -54,6 +54,7 @@ export function CollectionPanel({
   triviaList,
   discoveredSet,
   t,
+  onBack,
 }: {
   count: number;
   total: number;
@@ -63,8 +64,8 @@ export function CollectionPanel({
   triviaList: Trivia[];
   discoveredSet: Set<number>;
   t: (key: string, vars?: Record<string, string | number>) => string;
+  onBack: () => void;
 }) {
-  const [open, setOpen] = useState(false);
   const [view, setView] = useState<"grid" | "list">("grid");
   const [filter, setFilter] = useState<FilterId>("all");
 
@@ -81,54 +82,16 @@ export function CollectionPanel({
   const filteredDiscovered = filtered.filter((t) => discoveredSet.has(t.value)).length;
 
   return (
-    <>
-      <button
-        onClick={() => setOpen(true)}
-        className="group relative w-full overflow-hidden rounded-2xl border border-violet-500/30 bg-gradient-to-r from-violet-950/60 via-indigo-950/40 to-violet-950/60 px-4 py-3 text-left transition hover:border-violet-400/50 hover:shadow-[0_0_24px_rgba(139,92,246,0.2)]"
-      >
-        <div className="absolute inset-0 bg-[repeating-linear-gradient(90deg,transparent,transparent_20px,rgba(139,92,246,0.03)_20px,rgba(139,92,246,0.03)_40px)]" />
-        <div className="relative flex items-center justify-between gap-3">
-          <div>
-            <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-violet-300/80">
-              {t("collection")}
-            </p>
-            <p className="mt-0.5 font-mono text-lg font-bold text-white">
-              {count}
-              <span className="text-violet-400/60"> / {total}</span>
-            </p>
-          </div>
-          <div className="text-right">
-            <p className="font-mono text-2xl font-black text-transparent bg-gradient-to-r from-violet-300 to-fuchsia-300 bg-clip-text">
-              {percent}%
-            </p>
-            <p className="text-[10px] text-amber-400/80">SSR {ssrCount}</p>
-          </div>
-        </div>
-        <div className="relative mt-2 h-1.5 overflow-hidden rounded-full bg-zinc-800">
-          <div
-            className="h-full rounded-full bg-gradient-to-r from-violet-500 via-fuchsia-500 to-amber-400 transition-all duration-700"
-            style={{ width: `${percent}%` }}
-          />
-        </div>
-      </button>
-
-      {open && (
-        <div
-          className="fixed inset-0 z-50 flex items-end justify-center bg-black/70 backdrop-blur-sm sm:items-center"
-          onClick={() => setOpen(false)}
-        >
-          <div
-            className="animate-slide-up glass flex max-h-[85dvh] w-full max-w-lg flex-col overflow-hidden rounded-t-3xl border border-violet-500/30 sm:rounded-3xl"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="shrink-0 border-b border-violet-500/20 bg-gradient-to-r from-violet-950/80 to-indigo-950/80 px-5 py-4">
+    <main className="relative z-10 mx-auto flex min-h-dvh max-w-lg flex-col px-3 py-3">
+      <div className="glass flex min-h-0 flex-1 flex-col overflow-hidden rounded-3xl border border-violet-500/30">
+        <div className="shrink-0 border-b border-violet-500/20 bg-gradient-to-r from-violet-950/80 to-indigo-950/80 px-4 py-3">
               <div className="flex items-center justify-between">
                 <h2 className="text-lg font-black text-gradient-title">{t("collectionTitle")}</h2>
                 <button
-                  onClick={() => setOpen(false)}
+                  onClick={onBack}
                   className="rounded-lg border border-zinc-700 px-3 py-1 text-xs text-zinc-400 hover:text-white"
                 >
-                  {t("close")}
+                  戻る
                 </button>
               </div>
               <p className="mt-1 font-mono text-sm text-violet-300/70">
@@ -172,9 +135,9 @@ export function CollectionPanel({
                   {filteredDiscovered}/{filtered.length} 発見
                 </p>
               )}
-            </div>
+        </div>
 
-            <div className="min-h-0 flex-1 overflow-y-auto p-4">
+        <div className="min-h-0 flex-1 overflow-y-auto p-3">
               {view === "grid" ? (
                 <div className="grid grid-cols-5 gap-1.5 sm:grid-cols-6">
                   {filtered.map((item) => {
@@ -250,10 +213,8 @@ export function CollectionPanel({
                   )}
                 </ul>
               )}
-            </div>
-          </div>
         </div>
-      )}
-    </>
+      </div>
+    </main>
   );
 }

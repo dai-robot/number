@@ -5,7 +5,9 @@ import { Background } from "@/components/Background";
 import { CollectionPanel } from "@/components/CollectionPanel";
 import { DailyResult } from "@/components/DailyResult";
 import { DiscoveryToast } from "@/components/DiscoveryToast";
+import { ProgressSummary } from "@/components/ProgressSummary";
 import { ScreenFlash } from "@/components/ScreenFlash";
+import { ShareActions } from "@/components/ShareActions";
 import {
   CategoryIcon,
   Confetti,
@@ -30,6 +32,7 @@ import { CATEGORY_LABELS, getShortTitle, SOURCE_TYPE_LABELS } from "@/types/triv
 const TRIVIA_LIST = loadTrivia();
 
 type Mode = "free" | "daily";
+type Screen = "play" | "collection";
 
 const RARITY_STYLES: Record<
   TriviaRarity,
@@ -63,6 +66,7 @@ export default function Home() {
   const [display, setDisplay] = useState("0.00");
   const [running, setRunning] = useState(false);
   const [mode, setMode] = useState<Mode>("free");
+  const [screen, setScreen] = useState<Screen>("play");
   const [result, setResult] = useState<TriviaResult | null>(null);
   const [animKey, setAnimKey] = useState(0);
   const [flashKey, setFlashKey] = useState(0);
@@ -71,6 +75,7 @@ export default function Home() {
   const [showNewToast, setShowNewToast] = useState(false);
   const [target, setTarget] = useState(0);
   const [praise, setPraise] = useState<string>("");
+  const [discoveryLabel, setDiscoveryLabel] = useState("🎉 NEW\n図鑑登録！");
 
   const startTimeRef = useRef(0);
   const elapsedRef = useRef(0);
@@ -99,10 +104,9 @@ export default function Home() {
       ) {
         const wasNew = !discoveredSet.has(triviaResult.trivia.value);
         discover(triviaResult.trivia);
-        if (wasNew) {
-          setNewDiscovery(triviaResult.trivia);
-          setShowNewToast(true);
-        }
+        setDiscoveryLabel(wasNew ? "🎉 NEW\n図鑑登録！" : "📚 既に発見済み");
+        setNewDiscovery(triviaResult.trivia);
+        setShowNewToast(true);
       }
 
       if (triviaResult.matchType === "exact" && rarity === "SSR") {
@@ -242,6 +246,25 @@ export default function Home() {
       )
     );
 
+  if (screen === "collection") {
+    return (
+      <>
+        <Background />
+        <CollectionPanel
+          count={count}
+          total={TRIVIA_LIST.length}
+          ssrCount={ssrCount}
+          percent={percent}
+          entries={entries}
+          triviaList={TRIVIA_LIST}
+          discoveredSet={discoveredSet}
+          t={t}
+          onBack={() => setScreen("play")}
+        />
+      </>
+    );
+  }
+
   return (
     <>
       <Background />
@@ -250,13 +273,14 @@ export default function Home() {
         trivia={newDiscovery}
         isNew={showNewToast}
         onDone={() => setShowNewToast(false)}
-        label={t("newDiscovery")}
+        label={discoveryLabel}
       />
 
-      <main className="relative z-10 mx-auto flex min-h-dvh max-w-lg flex-col items-center justify-center gap-6 px-4 py-10">
-        <header className="w-full text-center">
-          <div className="mb-3 flex items-center justify-center gap-2">
-            <div className="inline-flex items-center gap-2 rounded-full border border-white/8 bg-white/5 px-4 py-1.5 backdrop-blur-sm">
+      <main className="relative z-10 mx-auto flex min-h-dvh max-w-lg flex-col gap-2 overflow-x-hidden px-3 py-3">
+        <section className="flex min-h-[calc(100dvh-1.5rem)] flex-col justify-between gap-2">
+          <header className="w-full text-center">
+          <div className="mb-1.5 flex items-center justify-center gap-2">
+            <div className="inline-flex items-center gap-2 rounded-full border border-white/8 bg-white/5 px-3 py-1 backdrop-blur-sm">
               <span className="h-2 w-2 rounded-full bg-orange-400 animate-pulse" />
               <span className="font-mono text-[10px] uppercase tracking-widest text-zinc-400">
                 {t("brand")}
@@ -275,10 +299,10 @@ export default function Home() {
               onToggleBgm={toggleBgm}
             />
           </div>
-          <h1 className="animate-title-shine text-gradient-title text-4xl font-black tracking-tight sm:text-5xl">
+          <h1 className="animate-title-shine text-gradient-title text-3xl font-black tracking-tight">
             {t("title")}
           </h1>
-          <p className="mt-3 text-sm text-zinc-400">{t("subtitle", { max: MAX_SECONDS })}</p>
+          <p className="mt-1 text-[11px] text-zinc-500">SSRを集めて図鑑を埋めよう</p>
         </header>
 
         <div className="flex w-full gap-2 rounded-2xl border border-zinc-800 bg-zinc-900/50 p-1">
@@ -301,18 +325,13 @@ export default function Home() {
         </div>
 
         {mode === "free" ? (
-          <div className="w-full">
-            <CollectionPanel
+          <ProgressSummary
               count={count}
               total={TRIVIA_LIST.length}
               ssrCount={ssrCount}
               percent={percent}
-              entries={entries}
-              triviaList={TRIVIA_LIST}
-              discoveredSet={discoveredSet}
-              t={t}
+              onOpenCollection={() => setScreen("collection")}
             />
-          </div>
         ) : (
           <DailyTargetHud
             t={t}
@@ -331,19 +350,35 @@ export default function Home() {
           </p>
         )}
 
-        <div className="flex gap-3">
+        <div className="grid w-full grid-cols-2 gap-2">
           <ActionButton onClick={handleStart} disabled={running || dailyLocked} variant="start" icon="▶">
             {t("start")}
           </ActionButton>
           <ActionButton onClick={handleStop} disabled={!running} variant="stop" icon="■">
             {t("stop")}
           </ActionButton>
-          <ActionButton onClick={handleReset} variant="reset" icon="↺">
-            {t("reset")}
-          </ActionButton>
         </div>
 
-        {mode === "free" && result && <ResultCard key={animKey} result={result} t={t} />}
+          <details className="w-full rounded-xl border border-zinc-800 bg-zinc-950/50 px-3 py-2 text-xs text-zinc-500">
+            <summary className="cursor-pointer font-bold text-zinc-400">このゲームについて</summary>
+            <p className="mt-2 leading-relaxed">{t("subtitle", { max: MAX_SECONDS })}</p>
+            <button onClick={handleReset} className="mt-2 text-zinc-400 underline">
+              {t("reset")}
+            </button>
+          </details>
+
+          <footer className="pb-1 text-center text-[10px] text-zinc-700">{kbdHint}</footer>
+        </section>
+
+        {mode === "free" && result && (
+          <ResultCard
+            key={animKey}
+            result={result}
+            t={t}
+            count={count}
+            total={TRIVIA_LIST.length}
+          />
+        )}
 
         {mode === "daily" && daily.attempts.length > 0 && (
           <DailyResult
@@ -358,8 +393,6 @@ export default function Home() {
             streak={daily.streak}
           />
         )}
-
-        <footer className="text-center text-xs text-zinc-600">{kbdHint}</footer>
       </main>
     </>
   );
@@ -427,7 +460,7 @@ function ActionButton({
     <button
       onClick={onClick}
       disabled={disabled}
-      className={`flex items-center gap-2 rounded-2xl px-6 py-3.5 text-sm font-bold transition-all active:scale-95 disabled:opacity-25 disabled:active:scale-100 ${styles[variant]}`}
+      className={`flex min-h-16 items-center justify-center gap-2 rounded-2xl px-5 py-4 text-base font-black transition-all active:scale-95 disabled:opacity-25 disabled:active:scale-100 ${styles[variant]}`}
     >
       <span className="text-xs opacity-80">{icon}</span>
       {children}
@@ -438,15 +471,29 @@ function ActionButton({
 function ResultCard({
   result,
   t,
+  count,
+  total,
 }: {
   result: TriviaResult;
   t: (key: string, vars?: Record<string, string | number>) => string;
+  count: number;
+  total: number;
 }) {
   const { matchType, trivia, nearest, stoppedAt, diff } = result;
 
   if (matchType === "exact" && trivia) {
     return (
-      <TriviaCard trivia={trivia} stoppedAt={stoppedAt} badge={t("exactMatch")} showEffects exact t={t} />
+      <TriviaCard
+        trivia={trivia}
+        stoppedAt={stoppedAt}
+        badge={t("exactMatch")}
+        showEffects
+        exact
+        t={t}
+        result={result}
+        count={count}
+        total={total}
+      />
     );
   }
 
@@ -460,14 +507,14 @@ function ResultCard({
           targetValue={formatSeconds(trivia.value)}
           t={t}
         />
-        <TriviaCard trivia={trivia} stoppedAt={stoppedAt} badge={t("nearMatch")} near showEffects t={t} />
+        <TriviaCard trivia={trivia} stoppedAt={stoppedAt} badge={t("nearMatch")} near showEffects t={t} result={result} count={count} total={total} />
       </div>
     );
   }
 
   const short = getShortTitle(nearest);
   return (
-    <article className="animate-fade-up glass w-full overflow-hidden rounded-2xl border border-zinc-700/50 p-6">
+    <article className="animate-fade-up glass w-full overflow-hidden rounded-2xl border border-zinc-700/50 p-5">
       <div className="mb-4 flex items-center justify-between">
         <span className="font-mono text-sm text-zinc-400">{formatSeconds(stoppedAt)} {t("sec")}</span>
         <span className="rounded-full border border-zinc-600 bg-zinc-800 px-3 py-1 text-xs font-bold text-zinc-500">
@@ -490,6 +537,7 @@ function ResultCard({
           <p className="mt-2 font-mono text-xs text-teal-500/70">{t("target", { value: formatSeconds(nearest.value) })}</p>
         </div>
       </div>
+      <ShareActions result={result} count={count} total={total} />
     </article>
   );
 }
@@ -502,6 +550,9 @@ function TriviaCard({
   showEffects,
   exact,
   t,
+  result,
+  count,
+  total,
 }: {
   trivia: Trivia;
   stoppedAt: number;
@@ -510,6 +561,9 @@ function TriviaCard({
   showEffects?: boolean;
   exact?: boolean;
   t: (key: string, vars?: Record<string, string | number>) => string;
+  result?: TriviaResult;
+  count?: number;
+  total?: number;
 }) {
   const style = RARITY_STYLES[trivia.rarity];
   const isSSR = trivia.rarity === "SSR";
@@ -546,6 +600,9 @@ function TriviaCard({
           </p>
         </div>
       </div>
+      {result && count !== undefined && total !== undefined && (
+        <ShareActions result={result} count={count} total={total} />
+      )}
     </article>
   );
 }
