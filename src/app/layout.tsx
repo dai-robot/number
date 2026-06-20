@@ -16,8 +16,8 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "秒トリビア",
-  description: "止めた秒数にまつわるトリビアを教えてくれる",
+  title: "秒の物語",
+  description: "止めた秒に、短い人生が出る。",
 };
 
 export default function RootLayout({
