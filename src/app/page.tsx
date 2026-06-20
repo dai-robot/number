@@ -182,30 +182,16 @@ export default function Home() {
 
               <TimerRing running={running} display={display} />
 
-              <div className="grid w-full grid-cols-2 gap-2">
-                <button
-                  onClick={handleStart}
-                  disabled={running}
-                  className={`min-h-16 rounded-3xl text-xl font-black text-white transition active:scale-95 disabled:opacity-35 ${
-                    running
-                      ? "bg-gradient-to-b from-zinc-700 to-zinc-900"
-                      : "bg-gradient-to-b from-orange-300 via-orange-500 to-orange-700 shadow-[0_0_36px_rgba(251,146,60,0.38)]"
-                  }`}
-                >
-                  START
-                </button>
               <button
-                onClick={handleStop}
-                disabled={!running}
-                className={`min-h-16 rounded-3xl text-xl font-black text-white transition active:scale-95 disabled:opacity-35 ${
+                onClick={running ? handleStop : handleStart}
+                className={`min-h-20 w-full rounded-3xl text-2xl font-black text-white transition active:scale-95 ${
                   running
-                    ? "animate-pulse bg-gradient-to-b from-orange-300 via-orange-500 to-orange-700 shadow-[0_0_48px_rgba(251,146,60,0.55)]"
-                    : "bg-gradient-to-b from-zinc-700 to-zinc-900"
+                    ? "animate-pulse bg-gradient-to-b from-orange-300 via-orange-500 to-orange-700 shadow-[0_0_52px_rgba(251,146,60,0.58)]"
+                    : "bg-gradient-to-b from-orange-300 via-orange-500 to-orange-700 shadow-[0_0_40px_rgba(251,146,60,0.42)]"
                 }`}
               >
-                STOP
+                {running ? "STOP" : "START"}
               </button>
-              </div>
 
               <p className="text-center text-[11px] font-medium text-zinc-500">
                 STARTして、好きな瞬間でSTOP。1〜30秒の物語が出ます。
