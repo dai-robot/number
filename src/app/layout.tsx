@@ -16,17 +16,17 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "秒の物語",
-  description: "止めた秒に、短い人生が出る。",
+  title: "秒で日本史",
+  description: "止めた秒が、そのまま西暦になる。",
   openGraph: {
-    title: "秒の物語",
-    description: "止めた秒に、短い人生が出る。",
+    title: "秒で日本史",
+    description: "止めた秒が、そのまま西暦になる。",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "秒の物語",
-    description: "止めた秒に、短い人生が出る。",
+    title: "秒で日本史",
+    description: "止めた秒が、そのまま西暦になる。",
   },
 };
 

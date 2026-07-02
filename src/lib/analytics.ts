@@ -5,7 +5,8 @@ export type AnalyticsEvent =
   | "result_view"
   | "share_click"
   | "image_save_click"
-  | "catalog_open";
+  | "catalog_open"
+  | "mode_switch";
 
 export function track(event: AnalyticsEvent, payload?: Record<string, unknown>) {
   if (process.env.NODE_ENV !== "production") {
